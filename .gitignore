@@ -1,0 +1,14 @@
+# Local Claude Code memory
+.remember/
+
+# Local http.server artifacts
+py.log
+py.err.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
