@@ -9,7 +9,7 @@ Single-file static marketing site for "Laura Nails" — in-home manicures/pedicu
 Six tracked files at the root:
 
 - `index.html` — the entire site (HTML + inline CSS in `<style>` + inline JS in `<script>`)
-- `hero-nails.jpg`, `laura-portrait.jpg`, `service-gel.jpg`, `service-manicure.jpg`, `service-pedicure.jpg` — referenced from `index.html` by relative filename
+- `laura-nails.webp`, `laura-abtme.webp`, `service-gel.jpg`, `service-manicure.jpg`, `service-pedicure.jpg` — referenced from `index.html` by relative filename. The two `laura-*` photos are WebP for size; if you replace them, keep WebP and re-export at quality ~82.
 
 `.remember/` (Claude Code memory) and `py.log`/`py.err.log` (artifacts from the optional `python -m http.server` below) may exist locally but are not part of the site — safe to ignore or delete.
 
