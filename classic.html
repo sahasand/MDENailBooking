@@ -1,0 +1,1775 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Laura Nails | Manicure y Pedicure a Domicilio en Medellín</title>
+<meta name="description" content="¡Hola! Soy Laura. Hago manicure y pedicure en tu hotel, Airbnb o apartamento en Medellín. Escribime por WhatsApp." />
+<meta name="theme-color" content="#FAF6F2" />
+
+<!-- Social link preview (OG / Twitter) -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://sahasand.github.io/MDENailBooking/" />
+<meta property="og:title" content="Laura Nails · Manicure y Pedicure a Domicilio en Medellín" />
+<meta property="og:description" content="Voy a tu hotel, Airbnb o apartamento. Escribime por WhatsApp." />
+<meta property="og:image" content="https://sahasand.github.io/MDENailBooking/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Laura Nails: uñas pintadas a mano, manicure a domicilio en Medellín" />
+<meta property="og:locale" content="es_CO" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Laura Nails · Manicure y Pedicure a Domicilio en Medellín" />
+<meta name="twitter:description" content="Voy a tu hotel, Airbnb o apartamento. Escribime por WhatsApp." />
+<meta name="twitter:image" content="https://sahasand.github.io/MDENailBooking/og-image.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream: #FAF6F2;
+    --blush: #F3E1D8;
+    --dusty-rose: #C78B7B;
+    --deep-rose: #A65D4D;
+    --espresso: #3D2B24;
+    --warm-gray: #7A6B65;
+    --container: 1200px;
+    --nav-h: 72px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body, h1, h2, h3, p, ul, ol, figure, button { margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--cream);
+    color: var(--espresso);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; }
+  ul { list-style: none; }
+  section[id] { scroll-margin-top: calc(var(--nav-h) + 8px); }
+
+  .container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  @media (min-width: 768px) { .container { padding: 0 3rem; } }
+
+  .display { font-family: 'Playfair Display', Georgia, serif; font-weight: 400; }
+  .eyebrow {
+    font-size: 0.75rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 2px;
+    color: var(--warm-gray);
+    margin-bottom: 1rem;
+  }
+  .eyebrow.rose { color: var(--dusty-rose); }
+  .h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 4vw + 0.5rem, 3rem);
+    line-height: 1.18;
+    color: var(--espresso);
+    margin-bottom: 1rem;
+  }
+
+  /* ───── Nav ───── */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    height: var(--nav-h);
+    display: flex; align-items: center;
+    transition: background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+  }
+  .nav.scrolled {
+    background: rgba(250, 246, 242, 0.95);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .nav-inner {
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem;
+  }
+  @media (min-width: 768px) { .nav-inner { padding: 0 3rem; } }
+  .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+  .nav-right {
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  @media (min-width: 768px) { .nav-right { gap: 1.5rem; } }
+  .nav-links { display: none; align-items: center; gap: 2rem; }
+  @media (min-width: 768px) { .nav-links { display: flex; } }
+  .nav-link {
+    font-size: 0.875rem; font-weight: 500;
+    color: var(--warm-gray);
+    transition: color 0.2s;
+  }
+  .nav-link:hover { color: var(--espresso); }
+  .icon-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 0.5rem;
+    color: var(--espresso);
+  }
+  .icon-btn:focus-visible { outline: 2px solid var(--dusty-rose); outline-offset: 2px; border-radius: 6px; }
+  .menu-trigger { display: inline-flex; }
+  @media (min-width: 768px) { .menu-trigger { display: none; } }
+
+  /* ───── Language toggle ───── */
+  .lang-toggle {
+    display: inline-flex;
+    border: 1px solid rgba(61, 43, 36, 0.15);
+    border-radius: 999px;
+    padding: 2px;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .lang-btn {
+    padding: 5px 9px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--warm-gray);
+    border-radius: 999px;
+    transition: background 0.2s ease, color 0.2s ease;
+    min-width: 30px;
+    line-height: 1;
+  }
+  .lang-btn[aria-pressed="true"] {
+    background: var(--espresso);
+    color: white;
+  }
+  .lang-btn:not([aria-pressed="true"]):hover { color: var(--espresso); }
+  .lang-btn:focus-visible { outline: 2px solid var(--dusty-rose); outline-offset: 2px; }
+
+  /* Mobile sheet */
+  .sheet {
+    position: fixed; inset: 0; z-index: 60;
+    visibility: hidden; opacity: 0; pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  }
+  .sheet.open { visibility: visible; opacity: 1; pointer-events: auto; transition: opacity 0.3s ease, visibility 0s; }
+  .sheet-backdrop {
+    position: absolute; inset: 0;
+    background: rgba(61, 43, 36, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .sheet-panel {
+    position: absolute; top: 0; right: 0; bottom: 0;
+    width: min(300px, 80vw);
+    background: var(--blush);
+    box-shadow: -10px 0 40px rgba(0,0,0,0.12);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex; flex-direction: column;
+  }
+  .sheet.open .sheet-panel { transform: translateX(0); }
+  .sheet-head {
+    display: flex; justify-content: flex-end;
+    padding: 1.5rem;
+  }
+  .sheet-links {
+    display: flex; flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 0;
+  }
+  .sheet-link {
+    font-size: 1.125rem; font-weight: 500;
+    color: var(--espresso);
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(61, 43, 36, 0.1);
+  }
+  .sheet-cta { margin-top: 1rem; }
+
+  /* ───── Buttons ───── */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    border-radius: 999px;
+    padding: 0 1.5rem;
+    height: 3.5rem;
+    font-size: 0.875rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn:active { transform: translateY(0); }
+  .btn:focus-visible { outline: 2px solid var(--dusty-rose); outline-offset: 3px; }
+  .btn-rose {
+    background: var(--dusty-rose);
+    color: white;
+  }
+  .btn-rose:hover { box-shadow: 0 8px 24px rgba(199, 139, 123, 0.35); }
+  .btn-outline {
+    background: transparent;
+    color: var(--espresso);
+    border: 1px solid var(--espresso);
+  }
+  .btn-outline:hover {
+    background: var(--espresso);
+    color: white;
+    box-shadow: 0 6px 18px rgba(61, 43, 36, 0.2);
+  }
+  .btn-dark {
+    background: var(--espresso);
+    color: white;
+  }
+  .btn-dark:hover { background: var(--deep-rose); }
+  .btn-light {
+    background: white;
+    color: var(--espresso);
+    height: 4rem;
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+  .btn-light:hover { box-shadow: 0 12px 32px rgba(0,0,0,0.25); }
+  .btn-lg { height: 4rem; font-size: 1rem; padding: 0 2rem; }
+  .btn-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: var(--dusty-rose);
+    color: white;
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 999px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+  }
+  .btn-nav:hover { box-shadow: 0 8px 24px rgba(199, 139, 123, 0.35); transform: translateY(-2px); }
+
+  /* ───── Hero ───── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex; align-items: center;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 35%, rgba(243, 225, 216, 0.55) 0%, transparent 60%),
+      radial-gradient(ellipse 70% 60% at 10% 90%, rgba(199, 139, 123, 0.10) 0%, transparent 65%),
+      var(--cream);
+    padding-top: 6rem; padding-bottom: 4rem;
+  }
+  .hero-grid {
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .hero-grid {
+      padding: 0 3rem;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 4rem;
+    }
+  }
+  .hero-content {
+    position: relative;
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    .hero-content { text-align: left; max-width: none; margin: 0; }
+  }
+  .hero .eyebrow { margin-bottom: 1.25rem; }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(2.5rem, 6.5vw, 4.25rem);
+    line-height: 1.05;
+    color: var(--espresso);
+    letter-spacing: -0.012em;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 400;
+  }
+  .hero p.lede {
+    font-size: clamp(1rem, 1.4vw + 0.25rem, 1.125rem);
+    line-height: 1.65;
+    color: var(--warm-gray);
+    max-width: 480px;
+    margin: 0 auto 1.75rem;
+  }
+  @media (min-width: 768px) {
+    .hero p.lede { margin-left: 0; margin-right: 0; }
+  }
+  .trust-row {
+    display: flex; flex-wrap: wrap;
+    align-items: center; justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.75rem;
+  }
+  @media (min-width: 768px) { .trust-row { justify-content: flex-start; } }
+  .trust-chip {
+    display: inline-flex; align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.875rem;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(199, 139, 123, 0.18);
+    border-radius: 999px;
+    color: var(--espresso);
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .trust-chip svg {
+    width: 0.875rem; height: 0.875rem;
+    color: var(--dusty-rose);
+    flex-shrink: 0;
+  }
+  .hero-cta-row {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 1.25rem;
+  }
+  @media (min-width: 640px) { .hero-cta-row { flex-direction: row; gap: 1.75rem; } }
+  @media (min-width: 768px) { .hero-cta-row { justify-content: flex-start; } }
+  .hero-link-secondary {
+    display: inline-flex; align-items: center; gap: 0.375rem;
+    font-size: 0.9375rem; font-weight: 500;
+    color: var(--warm-gray);
+    border-bottom: 1px solid rgba(122, 107, 101, 0.4);
+    padding: 0.25rem 0;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .hero-link-secondary:hover { color: var(--espresso); border-color: var(--espresso); }
+  .hero-link-secondary svg { width: 1rem; height: 1rem; transition: transform 0.2s ease; }
+  .hero-link-secondary:hover svg { transform: translateY(2px); }
+
+  /* Hero portrait: organic blob mask, soft accent shape behind */
+  .hero-portrait {
+    position: relative;
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+    aspect-ratio: 5 / 7;
+    order: -1;
+  }
+  @media (min-width: 768px) {
+    .hero-portrait { max-width: 460px; order: 0; margin: 0; }
+  }
+  .hero-portrait img {
+    position: relative;
+    z-index: 2;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+    border-radius: 58% 42% 60% 40% / 50% 60% 40% 50%;
+    box-shadow: 0 30px 60px -10px rgba(61, 43, 36, 0.22), 0 10px 20px -8px rgba(61, 43, 36, 0.1);
+  }
+  .hero-portrait::before {
+    content: '';
+    position: absolute;
+    inset: -1.5rem -1.75rem -1rem -2rem;
+    background: var(--blush);
+    border-radius: 52% 48% 60% 40% / 55% 65% 35% 45%;
+    z-index: 1;
+    opacity: 0.7;
+    animation: blob-drift 10s ease-in-out infinite;
+    will-change: transform;
+  }
+  @media (min-width: 768px) {
+    .hero-portrait::before { inset: -2rem -2.5rem -1.5rem -2.5rem; }
+  }
+  /* Small accent dot, like a polish drop */
+  .hero-portrait::after {
+    content: '';
+    position: absolute;
+    width: 1.25rem; height: 1.25rem;
+    background: var(--dusty-rose);
+    border-radius: 50%;
+    bottom: 8%; right: -2%;
+    z-index: 3;
+    box-shadow: 0 8px 18px -4px rgba(199, 139, 123, 0.5);
+  }
+  @media (min-width: 768px) {
+    .hero-portrait::after { width: 2rem; height: 2rem; bottom: 6%; right: -1.5%; }
+  }
+
+  .scroll-indicator {
+    position: absolute;
+    bottom: 1.5rem; left: 50%;
+    transform: translateX(-50%);
+    color: var(--warm-gray);
+    animation: bounce-gentle 2s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  /* ───── Section transitions ───── */
+  .strip { height: 60px; }
+  .strip.cream-white { background: linear-gradient(to bottom, var(--cream), white); }
+  .strip.white-cream { background: linear-gradient(to bottom, white, var(--cream)); }
+  .strip.white-blush { background: linear-gradient(to bottom, white, var(--blush)); }
+  .strip.blush-cream { background: linear-gradient(to bottom, var(--blush), var(--cream)); }
+
+  /* ───── Section base ───── */
+  .section { padding: 4rem 0; }
+  @media (min-width: 768px) { .section { padding: 7.5rem 0; } }
+
+  /* ───── Services ───── */
+  .services { background: white; }
+  .services .head { margin-bottom: 3rem; }
+  @media (min-width: 768px) { .services .head { margin-bottom: 4rem; } }
+  .services .lede {
+    font-size: 1rem; line-height: 1.75;
+    color: var(--warm-gray);
+    max-width: 520px;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  @media (min-width: 768px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
+  .card {
+    background: var(--blush);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex; flex-direction: column;
+  }
+  @media (min-width: 768px) { .card { padding: 2.5rem; } }
+  .card-img {
+    width: 100%; height: 12rem;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+  }
+  .icon-circle {
+    width: 3rem; height: 3rem;
+    border-radius: 50%;
+    background: rgba(199, 139, 123, 0.15);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--dusty-rose);
+    margin-bottom: 1rem;
+  }
+  .icon-circle.lg { width: 4rem; height: 4rem; }
+  .icon-circle svg { width: 1.25rem; height: 1.25rem; }
+  .icon-circle.lg svg { width: 1.5rem; height: 1.5rem; }
+  .card h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(1.375rem, 2vw + 0.5rem, 1.75rem);
+    line-height: 1.3;
+    color: var(--espresso);
+    margin-bottom: 0.75rem;
+  }
+  .card p {
+    font-size: 0.9375rem; line-height: 1.73;
+    color: var(--warm-gray);
+  }
+  .card-meta {
+    margin-top: auto; padding-top: 1.5rem;
+    display: flex; align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem; color: var(--warm-gray);
+  }
+  .card-meta svg { width: 0.875rem; height: 0.875rem; }
+  .card-meta .price { font-weight: 500; color: var(--espresso); }
+  .card-meta .dot { color: var(--dusty-rose); }
+  .section-foot { margin-top: 3rem; text-align: center; }
+  @media (min-width: 768px) { .section-foot { margin-top: 4rem; } }
+  .section-foot p {
+    font-size: 1rem; color: var(--warm-gray);
+    margin-bottom: 1rem;
+  }
+
+  /* ───── Sticky WhatsApp FAB (mobile only) ───── */
+  .wa-fab {
+    position: fixed;
+    bottom: 1.25rem; right: 1.25rem;
+    z-index: 40;
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: var(--dusty-rose);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 24px rgba(199, 139, 123, 0.4), 0 2px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(12px) scale(0.85);
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+  }
+  .wa-fab.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+  }
+  .wa-fab:hover { background: var(--deep-rose); }
+  .wa-fab:active { transform: translateY(0) scale(0.95); }
+  .wa-fab svg { width: 26px; height: 26px; }
+  @media (min-width: 768px) {
+    .wa-fab { display: none; }
+  }
+
+  /* ───── About ───── */
+  .about { background: var(--cream); }
+  .about-grid {
+    display: flex; flex-direction: column;
+    align-items: center; gap: 3rem;
+  }
+  @media (min-width: 768px) { .about-grid { flex-direction: row; gap: 4rem; align-items: center; } }
+  .about-image-col { position: relative; width: 100%; }
+  @media (min-width: 768px) { .about-image-col { width: 55%; } }
+  .about-image {
+    width: 100%;
+    border-radius: 16px;
+    transform: rotate(-2deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+  .about-blob {
+    position: absolute;
+    top: -1rem; right: -1rem;
+    width: 5rem; height: 5rem;
+    border-radius: 50%;
+    background: rgba(199, 139, 123, 0.2);
+    z-index: -1;
+  }
+  @media (min-width: 768px) {
+    .about-blob { top: 0; right: 2rem; }
+  }
+  .about-text-col { width: 100%; }
+  @media (min-width: 768px) { .about-text-col { width: 45%; padding-left: 2rem; } }
+  .about-text-col p {
+    font-size: 1rem; line-height: 1.75;
+    color: var(--warm-gray);
+    max-width: 540px;
+  }
+  .about-text-col p + p { margin-top: 1rem; }
+  .chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+    max-width: 540px;
+  }
+  @media (max-width: 480px) {
+    .chips { grid-template-columns: 1fr; gap: 0.75rem; }
+  }
+  .chip { display: flex; align-items: center; gap: 0.5rem; }
+  .chip-dot {
+    width: 1.25rem; height: 1.25rem;
+    border-radius: 50%;
+    background: rgba(199, 139, 123, 0.15);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; color: var(--dusty-rose);
+  }
+  .chip-dot svg { width: 0.75rem; height: 0.75rem; }
+  .chip-text { font-size: 0.875rem; font-weight: 500; color: var(--espresso); }
+
+  /* ───── How It Works ───── */
+  .how { background: white; }
+  .how .head { text-align: center; margin-bottom: 3rem; }
+  @media (min-width: 768px) { .how .head { margin-bottom: 4rem; } }
+  .steps {
+    position: relative;
+    display: flex; flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+  @media (min-width: 768px) {
+    .steps { flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 0; }
+  }
+  .connector {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .connector {
+      display: block;
+      position: absolute;
+      top: 4rem; left: 16%; right: 16%;
+      height: 1px;
+      background: rgba(199, 139, 123, 0.3);
+    }
+  }
+  .step {
+    position: relative;
+    flex: 1;
+    display: flex; flex-direction: column;
+    align-items: center; text-align: center;
+    padding: 0 1rem;
+  }
+  .step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem; line-height: 1;
+    color: rgba(199, 139, 123, 0.3);
+    margin-bottom: 1rem;
+  }
+  .step h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(1.375rem, 2vw + 0.5rem, 1.75rem);
+    line-height: 1.3;
+    color: var(--espresso);
+    margin-bottom: 0.75rem;
+  }
+  .step p {
+    font-size: 0.9375rem; line-height: 1.73;
+    color: var(--warm-gray);
+    max-width: 280px;
+  }
+
+  /* ───── Pricing ───── */
+  .pricing { background: var(--blush); }
+  .pricing .head { text-align: center; margin-bottom: 3rem; }
+  @media (min-width: 768px) { .pricing .head { margin-bottom: 4rem; } }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  @media (min-width: 768px) { .pricing-grid { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+  .pricing-col h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(1.375rem, 2vw + 0.5rem, 1.75rem);
+    line-height: 1.3;
+    color: var(--espresso);
+    margin-bottom: 1.5rem;
+  }
+  .pricing-col.panel {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    padding: 1.75rem;
+  }
+  @media (min-width: 768px) { .pricing-col.panel { padding: 2.25rem; } }
+  .price-row {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    padding: 1.125rem 0;
+    border-bottom: 1px solid rgba(61, 43, 36, 0.08);
+    gap: 1rem;
+  }
+  .price-row:last-child { border-bottom: none; }
+  .price-info { flex: 1; min-width: 0; }
+  .price-name { font-size: 1rem; font-weight: 500; color: var(--espresso); }
+  .price-meta {
+    font-size: 0.8125rem;
+    color: var(--warm-gray);
+    margin-top: 0.25rem;
+    line-height: 1.55;
+  }
+  .price-meta .dot { color: var(--dusty-rose); margin: 0 0.25rem; }
+  .price-tail {
+    display: flex; flex-direction: column;
+    align-items: flex-end;
+    gap: 0.625rem;
+    flex-shrink: 0;
+  }
+  .price-amount {
+    font-size: 1rem; font-weight: 500; color: var(--espresso);
+    white-space: nowrap; text-align: right; line-height: 1.3;
+  }
+  .price-usd {
+    display: block;
+    font-size: 0.75rem; font-weight: 400;
+    color: var(--warm-gray);
+    margin-top: 0.125rem;
+  }
+  .price-amount.addon { color: var(--dusty-rose); }
+  .book-btn {
+    display: inline-flex; align-items: center; gap: 0.25rem;
+    background: transparent;
+    color: var(--dusty-rose);
+    border: 1px solid var(--dusty-rose);
+    border-radius: 999px;
+    padding: 0.4rem 0.875rem;
+    font-size: 0.75rem; font-weight: 500;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+  .book-btn:hover { background: var(--dusty-rose); color: white; transform: translateY(-1px) scale(1.04); box-shadow: 0 4px 12px rgba(199, 139, 123, 0.28); }
+  .book-btn:active { transform: translateY(0) scale(0.96); }
+  .book-btn svg { width: 0.875rem; height: 0.875rem; }
+  .book-btn.primary { background: var(--dusty-rose); color: white; }
+  .book-btn.primary:hover { background: var(--deep-rose); border-color: var(--deep-rose); }
+
+  /* Featured combo row */
+  .price-row.featured {
+    position: relative;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(199, 139, 123, 0.35);
+    border-radius: 14px;
+    padding: 1.5rem 1.25rem 1.25rem;
+    margin: 0.75rem 0;
+  }
+  .featured-tag {
+    position: absolute;
+    top: -0.625rem; left: 1rem;
+    background: var(--espresso);
+    color: white;
+    font-size: 0.625rem; font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 0.25rem 0.625rem;
+    border-radius: 999px;
+  }
+
+  /* Add-ons */
+  .price-row.simple { padding: 0.875rem 0; align-items: center; }
+  .addons-intro {
+    font-size: 0.8125rem;
+    color: var(--warm-gray);
+    margin: -0.5rem 0 0.75rem;
+  }
+
+  /* Bottom info strip */
+  .pricing-meta {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(61, 43, 36, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .pricing-meta { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  }
+  .pricing-meta-label {
+    font-size: 0.6875rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 1.2px;
+    color: var(--dusty-rose);
+    margin-bottom: 0.5rem;
+  }
+  .pricing-meta-value {
+    font-size: 0.8125rem; line-height: 1.6;
+    color: var(--warm-gray);
+  }
+
+  /* Stack price-row contents on narrow phones */
+  @media (max-width: 520px) {
+    .price-row { flex-direction: column; align-items: stretch; gap: 0.625rem; }
+    .price-tail {
+      flex-direction: row; align-items: center; justify-content: space-between;
+      width: 100%;
+    }
+    .price-amount { text-align: left; }
+    .price-row.simple { flex-direction: row; }
+  }
+
+  .pricing-fine {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    color: var(--warm-gray);
+  }
+
+  /* ───── FAQ ───── */
+  .faq { background: var(--cream); }
+  .faq .container { max-width: 720px; }
+  .faq .head { text-align: center; margin-bottom: 3rem; }
+  @media (min-width: 768px) { .faq .head { margin-bottom: 4rem; } }
+  .faq .head .h2 { margin-bottom: 1.5rem; }
+  .faq-lede {
+    font-size: 1rem; line-height: 1.75;
+    color: var(--warm-gray);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .faq-item { border-bottom: 1px solid rgba(61, 43, 36, 0.08); }
+  .faq-q {
+    width: 100%;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.25rem 0;
+    text-align: left;
+    font-size: 1rem; font-weight: 500;
+    color: var(--espresso);
+    gap: 1rem;
+    scroll-margin-top: calc(var(--nav-h) + 16px);
+  }
+  .faq-q:focus-visible {
+    outline: 2px solid var(--dusty-rose);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  .faq-chev {
+    width: 1.25rem; height: 1.25rem;
+    color: var(--warm-gray);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  .faq-q[aria-expanded="true"] .faq-chev { transform: rotate(180deg); }
+  .faq-a {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.4s ease, padding 0.4s ease;
+  }
+  .faq-q[aria-expanded="true"] + .faq-a {
+    grid-template-rows: 1fr;
+    padding-bottom: 1.25rem;
+  }
+  .faq-a > p {
+    overflow: hidden;
+    font-size: 0.9375rem;
+    line-height: 1.73;
+    color: var(--warm-gray);
+  }
+
+  /* ───── Footer CTA ───── */
+  .footer-cta { background: var(--espresso); padding: 6rem 0 4rem; }
+  @media (min-width: 768px) { .footer-cta { padding: 10rem 0 6rem; } }
+  .footer-cta .container.narrow { max-width: 600px; text-align: center; }
+  .footer-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(2.25rem, 4vw + 1rem, 3rem);
+    line-height: 1.18;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  .footer-cta .lede {
+    font-size: clamp(1rem, 1.5vw + 0.25rem, 1.125rem);
+    line-height: 1.7;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 2.5rem;
+  }
+  .footer-bottom {
+    max-width: var(--container);
+    margin: 4rem auto 0;
+    padding: 2rem 1.5rem 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.5);
+  }
+  @media (min-width: 768px) {
+    .footer-bottom { flex-direction: row; padding: 2rem 3rem 0; margin-top: 6rem; }
+  }
+
+  /* ───── Animations ───── */
+  @keyframes blob-drift {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(10px, -15px) scale(1.02); }
+  }
+  @keyframes bounce-gentle {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal.delay-1 { transition-delay: 0.08s; }
+  .reveal.delay-2 { transition-delay: 0.16s; }
+  .reveal.delay-3 { transition-delay: 0.24s; }
+  .reveal.delay-4 { transition-delay: 0.32s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─────────── NAV ─────────── -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand display">Laura</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#services" class="nav-link" data-i18n="nav.services">Servicios</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">Sobre mí</a>
+        <a href="#pricing" class="nav-link" data-i18n="nav.pricing">Precios</a>
+        <a href="#faq" class="nav-link" data-i18n="nav.faq">Preguntas</a>
+        <a class="btn-nav" data-wa rel="noopener noreferrer" target="_blank">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          <span data-i18n="nav.cta">Escribime</span>
+        </a>
+      </div>
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button class="lang-btn" data-lang="es" data-i18n-aria="lang.es-aria" aria-pressed="true">ES</button>
+        <button class="lang-btn" data-lang="en" data-i18n-aria="lang.en-aria" aria-pressed="false">EN</button>
+      </div>
+      <button class="icon-btn menu-trigger" id="menu-open" data-i18n-aria="nav.menu-open" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile sheet -->
+<div class="sheet" id="menu" aria-hidden="true" role="dialog" aria-modal="true" data-i18n-aria="nav.menu-label" aria-label="Menú">
+  <div class="sheet-backdrop" data-close></div>
+  <div class="sheet-panel">
+    <div class="sheet-head">
+      <button class="icon-btn" id="menu-close" data-i18n-aria="nav.menu-close" aria-label="Cerrar menú">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="sheet-links">
+      <a href="#services" class="sheet-link" data-close data-i18n="nav.services">Servicios</a>
+      <a href="#about" class="sheet-link" data-close data-i18n="nav.about">Sobre mí</a>
+      <a href="#pricing" class="sheet-link" data-close data-i18n="nav.pricing">Precios</a>
+      <a href="#faq" class="sheet-link" data-close data-i18n="nav.faq">Preguntas</a>
+      <a class="btn btn-rose sheet-cta" data-wa rel="noopener noreferrer" target="_blank" data-close>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        <span data-i18n="nav.cta">Escribime</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ─────────── HERO ─────────── -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">Manicure y Pedicure a Domicilio &middot; Medellín</p>
+      <h1 class="reveal delay-1"><em data-i18n="hero.h1-em">Uñas</em> <span data-i18n="hero.h1-rest">Bonitas,<br/>Donde Vos Estés</span></h1>
+      <p class="lede reveal delay-2" data-i18n="hero.lede">¡Hola! Soy Laura, paisa de toda la vida. Voy a tu hotel, Airbnb o apartamento para que te relajés tranqui y salgás de Medellín con las uñas hermosas.</p>
+      <div class="trust-row reveal delay-3">
+        <span class="trust-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span data-i18n="hero.trust-1">Me adapto a tus planes</span>
+        </span>
+        <span class="trust-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-i18n="hero.trust-2">Poblado, Laureles y Envigado</span>
+        </span>
+        <span class="trust-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+          <span data-i18n="hero.trust-3">Español, inglés con ayudita</span>
+        </span>
+      </div>
+      <div class="hero-cta-row reveal delay-4">
+        <a class="btn btn-rose btn-lg" data-wa rel="noopener noreferrer" target="_blank">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          <span data-i18n="hero.cta-primary">Escribime por WhatsApp</span>
+        </a>
+        <a class="hero-link-secondary" href="#services">
+          <span data-i18n="hero.cta-secondary">Ver servicios</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-portrait reveal">
+      <img src="laura-nails.webp" data-i18n-alt="hero.portrait-alt" alt="Laura mostrando sus uñas, manicure en Medellín" width="768" height="1365" loading="eager" decoding="async" fetchpriority="high" />
+    </div>
+  </div>
+  <div class="scroll-indicator" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+</section>
+
+<div class="strip cream-white"></div>
+
+<!-- ─────────── SERVICES ─────────── -->
+<section class="services section" id="services">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow rose reveal" data-i18n="services.eyebrow">Lo que hago</p>
+      <h2 class="h2 reveal delay-1" data-i18n="services.h2">¿Manicure, pedicure<br/>o las dos?</h2>
+      <p class="lede reveal delay-2" data-i18n="services.lede">El desplazamiento corre por mi cuenta dentro de Poblado, Laureles y Envigado. Llevo todo lo que necesitamos y nos tomamos el tiempo. Sin afanes.</p>
+    </div>
+    <div class="services-grid">
+      <article class="card reveal">
+        <img class="card-img" src="service-manicure.jpg" data-i18n-alt="services.alt-classic" alt="Manicure clásico" width="600" height="400" loading="lazy" decoding="async" />
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+        </div>
+        <h3 data-i18n="services.classic-title">Manicure Clásico</h3>
+        <p data-i18n="services.classic-desc">Limado, cutículas, masajito en las manos y el color que más te guste. Clásico por algo.</p>
+        <div class="card-meta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span data-i18n="services.classic-time">45 min</span>
+          <span class="dot">&middot;</span>
+          <span class="price">$45,000 COP</span>
+        </div>
+      </article>
+      <article class="card reveal delay-1">
+        <img class="card-img" src="service-gel.jpg" data-i18n-alt="services.alt-gel" alt="Manicure en gel" width="600" height="400" loading="lazy" decoding="async" />
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+        </div>
+        <h3 data-i18n="services.gel-title">Manicure en Gel</h3>
+        <p data-i18n="services.gel-desc">Esmalte en gel que dura entre dos y tres semanas sin saltarse. La misma atención del clásico, con brillo que se queda.</p>
+        <div class="card-meta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span data-i18n="services.gel-time">60 min</span>
+          <span class="dot">&middot;</span>
+          <span class="price">$65,000 COP</span>
+        </div>
+      </article>
+      <article class="card reveal delay-2">
+        <img class="card-img" src="service-pedicure.jpg" data-i18n-alt="services.alt-deluxe" alt="Pedicure deluxe" width="600" height="400" loading="lazy" decoding="async" />
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        </div>
+        <h3 data-i18n="services.deluxe-title">Pedicure Deluxe</h3>
+        <p data-i18n="services.deluxe-desc">Remojo, exfoliación, trabajo de durezas, masaje rico y esmalte. Esta es la que la gente vuelve a pedir.</p>
+        <div class="card-meta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span data-i18n="services.deluxe-time">75 min</span>
+          <span class="dot">&middot;</span>
+          <span class="price">$75,000 COP</span>
+        </div>
+      </article>
+    </div>
+    <div class="section-foot">
+      <p data-i18n="services.foot-text">¿No sabés cuál escoger? Escribime y te ayudo.</p>
+      <a class="btn btn-outline" data-wa rel="noopener noreferrer" target="_blank" data-i18n="services.foot-cta">Escribime nomás</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip white-cream"></div>
+
+<!-- ─────────── ABOUT ─────────── -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-col reveal">
+        <div class="about-blob" aria-hidden="true"></div>
+        <img class="about-image" src="laura-abtme.webp" data-i18n-alt="about.alt" alt="Laura en su estudio en Medellín" width="1086" height="1448" loading="lazy" decoding="async" />
+      </div>
+      <div class="about-text-col">
+        <p class="eyebrow rose reveal" data-i18n="about.eyebrow">Conocé a Laura</p>
+        <h2 class="h2 reveal delay-1" data-i18n="about.h2">Un poquito<br/>sobre mí</h2>
+        <div class="reveal delay-2">
+          <p data-i18n="about.p1">Soy Laura. Paisa, nacida y criada en Medellín, nunca he vivido en otro lado. Aprendí a hacer uñas acá en la ciudad y llevo dos años haciéndoselas a mis amigas, mis vecinas y a mi mamá. Ahora también se las hago a la gente que viene a visitar.</p>
+          <p data-i18n="about.p2">Sé cómo es cuando uno está de viaje. Lo último que querés es buscar un salón o pelearte con el español para pedir lo que querés. Por eso te lo llevo todo a tu lugar. Instrumentos, esmaltes, lámpara de gel, toallas. Vos te sentás y escogés el color.</p>
+        </div>
+        <div class="chips reveal delay-3">
+          <div class="chip">
+            <span class="chip-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span class="chip-text" data-i18n="about.chip-1">Capacitada en serio</span>
+          </div>
+          <div class="chip">
+            <span class="chip-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span class="chip-text" data-i18n="about.chip-2">Instrumentos limpios, siempre</span>
+          </div>
+          <div class="chip">
+            <span class="chip-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span class="chip-text" data-i18n="about.chip-3">Esmaltes que me encantan</span>
+          </div>
+          <div class="chip">
+            <span class="chip-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span class="chip-text" data-i18n="about.chip-4">Horarios flexibles</span>
+          </div>
+        </div>
+        <a class="btn btn-rose reveal delay-4" data-wa rel="noopener noreferrer" target="_blank">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          <span data-i18n="about.cta">Decime hola por WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip cream-white"></div>
+
+<!-- ─────────── HOW IT WORKS ─────────── -->
+<section class="how section">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow rose reveal" data-i18n="how.eyebrow">Cómo funciona</p>
+      <h2 class="h2 reveal delay-1" data-i18n="how.h2">Tres pasos fáciles</h2>
+    </div>
+    <div class="steps">
+      <div class="connector" aria-hidden="true"></div>
+      <div class="step reveal">
+        <span class="step-num display">01</span>
+        <div class="icon-circle lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        </div>
+        <h3 data-i18n="how.s1-title">Escribime</h3>
+        <p data-i18n="how.s1-desc">Contame dónde te estás quedando y a qué hora querés vernos. Suelo responder en pocos minutos.</p>
+      </div>
+      <div class="step reveal delay-1">
+        <span class="step-num display">02</span>
+        <div class="icon-circle lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3 data-i18n="how.s2-title">Voy a vos</h3>
+        <p data-i18n="how.s2-desc">Llego con todo. Lámpara, esmaltes, toallas, instrumentos. Vos no tenés que preparar nada.</p>
+      </div>
+      <div class="step reveal delay-2">
+        <span class="step-num display">03</span>
+        <div class="icon-circle lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+        </div>
+        <h3 data-i18n="how.s3-title">Listo, uñas divinas</h3>
+        <p data-i18n="how.s3-desc">Uñas bonitas y una tarde tranqui. Después te escribo para asegurarme de que quedaste feliz.</p>
+      </div>
+    </div>
+    <div class="section-foot">
+      <a class="btn btn-rose btn-lg" data-wa rel="noopener noreferrer" target="_blank">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        <span data-i18n="how.cta">Reservá hora por WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="strip white-blush"></div>
+
+<!-- ─────────── PRICING ─────────── -->
+<section class="pricing section" id="pricing">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow rose reveal" data-i18n="pricing.eyebrow">Cuánto cuesta</p>
+      <h2 class="h2 reveal delay-1" data-i18n="pricing.h2">Lo que ves<br/>es lo que pagás</h2>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Services -->
+      <div class="pricing-col reveal">
+        <h3 data-i18n="pricing.basics">Servicios</h3>
+
+        <div class="price-row">
+          <div class="price-info">
+            <p class="price-name" data-i18n="pricing.basics-1-name">Manicure Clásico</p>
+            <p class="price-meta">
+              <span data-i18n="pricing.basics-1-time">45 min</span>
+              <span class="dot">&middot;</span>
+              <span data-i18n="pricing.basics-1-incl">limado, cutículas, masaje, esmalte regular</span>
+            </p>
+          </div>
+          <div class="price-tail">
+            <p class="price-amount">$45,000 COP<span class="price-usd">≈ $11 USD</span></p>
+            <a class="book-btn" data-wa data-wa-text-key="pricing.basics-1-text" rel="noopener noreferrer" target="_blank">
+              <span data-i18n="pricing.book">Reservar</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div class="price-info">
+            <p class="price-name" data-i18n="pricing.basics-2-name">Manicure en Gel</p>
+            <p class="price-meta">
+              <span data-i18n="pricing.basics-2-time">60 min</span>
+              <span class="dot">&middot;</span>
+              <span data-i18n="pricing.basics-2-incl">gel que dura 2-3 semanas, sin saltarse</span>
+            </p>
+          </div>
+          <div class="price-tail">
+            <p class="price-amount">$65,000 COP<span class="price-usd">≈ $16 USD</span></p>
+            <a class="book-btn" data-wa data-wa-text-key="pricing.basics-2-text" rel="noopener noreferrer" target="_blank">
+              <span data-i18n="pricing.book">Reservar</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div class="price-info">
+            <p class="price-name" data-i18n="pricing.basics-3-name">Pedicure Deluxe</p>
+            <p class="price-meta">
+              <span data-i18n="pricing.basics-3-time">75 min</span>
+              <span class="dot">&middot;</span>
+              <span data-i18n="pricing.basics-3-incl">remojo, exfoliación, durezas, masaje, esmalte</span>
+            </p>
+          </div>
+          <div class="price-tail">
+            <p class="price-amount">$75,000 COP<span class="price-usd">≈ $19 USD</span></p>
+            <a class="book-btn" data-wa data-wa-text-key="pricing.basics-3-text" rel="noopener noreferrer" target="_blank">
+              <span data-i18n="pricing.book">Reservar</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="price-row featured">
+          <span class="featured-tag" data-i18n="pricing.most-popular">Más pedido</span>
+          <div class="price-info">
+            <p class="price-name" data-i18n="pricing.basics-4-name">Combo Mani + Pedi</p>
+            <p class="price-meta">
+              <span data-i18n="pricing.basics-4-time">2 horas</span>
+              <span class="dot">&middot;</span>
+              <span data-i18n="pricing.basics-4-incl">manicure + pedicure completo. Ahorrás $10,000 COP.</span>
+            </p>
+          </div>
+          <div class="price-tail">
+            <p class="price-amount">$110,000 COP<span class="price-usd">≈ $28 USD</span></p>
+            <a class="book-btn primary" data-wa data-wa-text-key="pricing.basics-4-text" rel="noopener noreferrer" target="_blank">
+              <span data-i18n="pricing.book">Reservar</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add-ons -->
+      <div class="pricing-col panel reveal delay-1">
+        <h3 data-i18n="pricing.addons">Sumale extras</h3>
+        <p class="addons-intro" data-i18n="pricing.addons-intro">Agregalos a cualquier servicio.</p>
+        <div class="price-row simple">
+          <p class="price-name" data-i18n="pricing.addon-1">Decoración (por uña)</p>
+          <p class="price-amount addon">+$5,000 COP</p>
+        </div>
+        <div class="price-row simple">
+          <p class="price-name" data-i18n="pricing.addon-2">Puntas francesas</p>
+          <p class="price-amount addon">+$10,000 COP</p>
+        </div>
+        <div class="price-row simple">
+          <p class="price-name" data-i18n="pricing.addon-3">Retiro de gel</p>
+          <p class="price-amount addon">+$15,000 COP</p>
+        </div>
+        <div class="price-row simple">
+          <p class="price-name" data-i18n="pricing.addon-4">Tiempo extra de masaje (15 min)</p>
+          <p class="price-amount addon">+$15,000 COP</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick-reference info strip -->
+    <div class="pricing-meta reveal">
+      <div>
+        <p class="pricing-meta-label" data-i18n="pricing.payment-label">Pago</p>
+        <p class="pricing-meta-value" data-i18n="pricing.payment-value">Efectivo en pesos, Nequi, Daviplata o Wise (USD).</p>
+      </div>
+      <div>
+        <p class="pricing-meta-label" data-i18n="pricing.travel-label">Desplazamiento</p>
+        <p class="pricing-meta-value" data-i18n="pricing.travel-value">Incluido en Poblado, Laureles y Envigado. Otros barrios, una platica pequeña.</p>
+      </div>
+      <div>
+        <p class="pricing-meta-label" data-i18n="pricing.usd-label">Conversión USD</p>
+        <p class="pricing-meta-value" data-i18n="pricing.usd-value">Aproximada a 4,000 COP por USD. La tasa al pagar puede variar.</p>
+      </div>
+    </div>
+
+    <div class="section-foot">
+      <p data-i18n="pricing.group-text">¿Vienen varias? Te armo un plan personalizado para el grupo.</p>
+      <a class="btn btn-dark" data-wa data-wa-text-key="pricing.group-prefill" rel="noopener noreferrer" target="_blank" data-i18n="pricing.cta">Pedir tarifa de grupo</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip blush-cream"></div>
+
+<!-- ─────────── FAQ ─────────── -->
+<section class="faq section" id="faq">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow rose reveal" data-i18n="faq.eyebrow">Preguntas frecuentes</p>
+      <h2 class="h2 reveal delay-1" data-i18n="faq.h2">Lo que la gente me pregunta</h2>
+      <p class="faq-lede reveal delay-2" data-i18n="faq.lede">Si tu pregunta no está acá, escribime nomás. Te voy a contestar con honestidad, así la respuesta sea "todavía no, pero pronto".</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-1">
+          <span data-i18n="faq.q1">¿Con cuánto tiempo de anticipación reservo?</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a" id="faq-1" role="region">
+          <p data-i18n="faq.a1">Las tardes entre semana suelen estar tranquilas, muchas veces te puedo atender el mismo día o el día anterior. Los fines de semana y los domingos antes de un vuelo se llenan rápido, así que para esos cupos mejor reservá con 2 o 3 días.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-2">
+          <span data-i18n="faq.q2">¿Es seguro que alguien venga a mi Airbnb?</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a" id="faq-2" role="region">
+          <p data-i18n="faq.a2">Te entiendo perfecto, es una pregunta justa. Si querés, te mando una foto de mi cédula antes de ir, o nos vemos en la portería y subimos juntas. Los anfitriones y porteros acá ya están acostumbrados. En Medellín es supercomún que alguien venga a la casa para servicios de belleza.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-3">
+          <span data-i18n="faq.q3">¿Qué idiomas hablás?</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a" id="faq-3" role="region">
+          <p data-i18n="faq.a3">El español es mi idioma materno. Mi inglés está bien, suficiente para reservar, conversar durante la cita y conocernos un poquito. También entiendo portugués escrito si te queda más fácil escribirme así.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-4">
+          <span data-i18n="faq.q4">¿Hacés decoración de uñas o solo esmalte básico?</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a" id="faq-4" role="region">
+          <p data-i18n="faq.a4">Cosas sencillas como puntas francesas, una uña de acento o líneas básicas, sí, todo bien. Para algo muy elaborado (3D, arte superdetallado), te digo de frente y te recomiendo a una amiga que se dedica a eso.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-5">
+          <span data-i18n="faq.q5">¿Cómo te pago?</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a" id="faq-5" role="region">
+          <p data-i18n="faq.a5">Lo más fácil es efectivo en pesos. También recibo Nequi, Daviplata y transferencias internacionales por Wise. Todavía no tengo datáfono, ¡disculpame!</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-6">
+          <span data-i18n="faq.q6">¿Puedo reservar para un grupo? (despedida, amigas de visita)</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a" id="faq-6" role="region">
+          <p data-i18n="faq.a6">¡Claro que sí, me encantan! Puedo atender hasta 3 o 4 personas seguidas en el mismo lugar. Decime cuántas son y a qué hora, y armo un plan para el grupo.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-7">
+          <span data-i18n="faq.q7">¿Qué pasa si se me salta el esmalte después?</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a" id="faq-7" role="region">
+          <p data-i18n="faq.a7">Si el manicure en gel se te salta dentro de los primeros 5 días, mandame una foto y voy a arreglártelo sin costo. El esmalte normal no tiene la misma garantía porque no está hecho para durar tanto, pero siempre te digo de frente cuál te sirve mejor para la semana que tenés planeada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── FOOTER CTA ─────────── -->
+<section class="footer-cta">
+  <div class="container narrow">
+    <h2 class="reveal" data-i18n="footer.h2">¿Listas para unas uñas divinas?</h2>
+    <p class="lede reveal delay-1" data-i18n="footer.lede">Mandame un WhatsApp y buscamos un momento que te quede bien. Suelo responder en menos de 15 minutos.</p>
+    <a class="btn btn-light reveal delay-2" data-wa rel="noopener noreferrer" target="_blank">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+      <span data-i18n="footer.cta">Escribime por WhatsApp</span>
+    </a>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="footer.brand">Laura Nails &middot; Medellín, Colombia</p>
+    <p>&copy; 2026</p>
+  </div>
+</section>
+
+</main>
+
+<!-- Sticky WhatsApp FAB (mobile only) -->
+<a class="wa-fab" id="wa-fab" data-wa rel="noopener noreferrer" target="_blank" data-i18n-aria="fab.aria" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+</a>
+
+<script>
+(function () {
+  'use strict';
+
+  // ─────────── i18n dictionary ───────────
+  var I18N = {
+    es: {
+      'meta.title': 'Laura Nails | Manicure y Pedicure a Domicilio en Medellín',
+      'meta.description': '¡Hola! Soy Laura. Hago manicure y pedicure en tu hotel, Airbnb o apartamento en Medellín. Escribime por WhatsApp.',
+      'lang.es-aria': 'Cambiar a español',
+      'lang.en-aria': 'Cambiar a inglés',
+
+      'nav.services': 'Servicios',
+      'nav.about': 'Sobre mí',
+      'nav.pricing': 'Precios',
+      'nav.faq': 'Preguntas',
+      'nav.cta': 'Escribime',
+      'nav.menu-open': 'Abrir menú',
+      'nav.menu-close': 'Cerrar menú',
+      'nav.menu-label': 'Menú',
+      'fab.aria': 'Escribir por WhatsApp',
+
+      'hero.eyebrow': 'Manicure y Pedicure a Domicilio · Medellín',
+      'hero.h1-em': 'Uñas',
+      'hero.h1-rest': 'Bonitas,\nDonde Vos Estés',
+      'hero.portrait-alt': 'Laura mostrando sus uñas, manicure en Medellín',
+      'hero.lede': '¡Hola! Soy Laura, paisa de toda la vida. Voy a tu hotel, Airbnb o apartamento para que te relajés tranqui y salgás de Medellín con las uñas hermosas.',
+      'hero.cta-primary': 'Escribime por WhatsApp',
+      'hero.cta-secondary': 'Ver servicios',
+      'hero.trust-1': 'Me adapto a tus planes',
+      'hero.trust-2': 'Poblado, Laureles y Envigado',
+      'hero.trust-3': 'Español, inglés con ayudita',
+
+      'services.eyebrow': 'Lo que hago',
+      'services.h2': '¿Manicure, pedicure\no las dos?',
+      'services.lede': 'El desplazamiento corre por mi cuenta dentro de Poblado, Laureles y Envigado. Llevo todo lo que necesitamos y nos tomamos el tiempo. Sin afanes.',
+      'services.classic-title': 'Manicure Clásico',
+      'services.classic-desc': 'Limado, cutículas, masajito en las manos y el color que más te guste. Clásico por algo.',
+      'services.classic-time': '45 min',
+      'services.gel-title': 'Manicure en Gel',
+      'services.gel-desc': 'Esmalte en gel que dura entre dos y tres semanas sin saltarse. La misma atención del clásico, con brillo que se queda.',
+      'services.gel-time': '60 min',
+      'services.deluxe-title': 'Pedicure Deluxe',
+      'services.deluxe-desc': 'Remojo, exfoliación, trabajo de durezas, masaje rico y esmalte. Esta es la que la gente vuelve a pedir.',
+      'services.deluxe-time': '75 min',
+      'services.foot-text': '¿No sabés cuál escoger? Escribime y te ayudo.',
+      'services.foot-cta': 'Escribime nomás',
+      'services.alt-classic': 'Manicure clásico',
+      'services.alt-gel': 'Manicure en gel',
+      'services.alt-deluxe': 'Pedicure deluxe',
+
+      'about.eyebrow': 'Conocé a Laura',
+      'about.h2': 'Un poquito\nsobre mí',
+      'about.p1': 'Soy Laura. Paisa, nacida y criada en Medellín, nunca he vivido en otro lado. Aprendí a hacer uñas acá en la ciudad y llevo dos años haciéndoselas a mis amigas, mis vecinas y a mi mamá. Ahora también se las hago a la gente que viene a visitar.',
+      'about.p2': 'Sé cómo es cuando uno está de viaje. Lo último que querés es buscar un salón o pelearte con el español para pedir lo que querés. Por eso te lo llevo todo a tu lugar. Instrumentos, esmaltes, lámpara de gel, toallas. Vos te sentás y escogés el color.',
+      'about.chip-1': 'Capacitada en serio',
+      'about.chip-2': 'Instrumentos limpios, siempre',
+      'about.chip-3': 'Esmaltes que me encantan',
+      'about.chip-4': 'Horarios flexibles',
+      'about.cta': 'Decime hola por WhatsApp',
+      'about.alt': 'Laura en su estudio en Medellín',
+
+      'how.eyebrow': 'Cómo funciona',
+      'how.h2': 'Tres pasos fáciles',
+      'how.s1-title': 'Escribime',
+      'how.s1-desc': 'Contame dónde te estás quedando y a qué hora querés vernos. Suelo responder en pocos minutos.',
+      'how.s2-title': 'Voy a vos',
+      'how.s2-desc': 'Llego con todo. Lámpara, esmaltes, toallas, instrumentos. Vos no tenés que preparar nada.',
+      'how.s3-title': 'Listo, uñas divinas',
+      'how.s3-desc': 'Uñas bonitas y una tarde tranqui. Después te escribo para asegurarme de que quedaste feliz.',
+      'how.cta': 'Reservá hora por WhatsApp',
+
+      'pricing.eyebrow': 'Cuánto cuesta',
+      'pricing.h2': 'Lo que ves\nes lo que pagás',
+      'pricing.basics': 'Servicios',
+      'pricing.basics-1-name': 'Manicure Clásico',
+      'pricing.basics-1-time': '45 min',
+      'pricing.basics-1-incl': 'limado, cutículas, masaje, esmalte regular',
+      'pricing.basics-1-text': '¡Hola Laura! Me gustaría reservar un Manicure Clásico ($45,000 COP).',
+      'pricing.basics-2-name': 'Manicure en Gel',
+      'pricing.basics-2-time': '60 min',
+      'pricing.basics-2-incl': 'gel que dura 2-3 semanas, sin saltarse',
+      'pricing.basics-2-text': '¡Hola Laura! Me gustaría reservar un Manicure en Gel ($65,000 COP).',
+      'pricing.basics-3-name': 'Pedicure Deluxe',
+      'pricing.basics-3-time': '75 min',
+      'pricing.basics-3-incl': 'remojo, exfoliación, durezas, masaje, esmalte',
+      'pricing.basics-3-text': '¡Hola Laura! Me gustaría reservar un Pedicure Deluxe ($75,000 COP).',
+      'pricing.basics-4-name': 'Combo Mani + Pedi',
+      'pricing.basics-4-time': '2 horas',
+      'pricing.basics-4-incl': 'manicure + pedicure completo. Ahorrás $10,000 COP.',
+      'pricing.basics-4-text': '¡Hola Laura! Me gustaría reservar el Combo Mani + Pedi ($110,000 COP).',
+      'pricing.most-popular': 'Más pedido',
+      'pricing.book': 'Reservar',
+      'pricing.addons': 'Sumale extras',
+      'pricing.addons-intro': 'Agregalos a cualquier servicio.',
+      'pricing.addon-1': 'Decoración (por uña)',
+      'pricing.addon-2': 'Puntas francesas',
+      'pricing.addon-3': 'Retiro de gel',
+      'pricing.addon-4': 'Tiempo extra de masaje (15 min)',
+      'pricing.payment-label': 'Pago',
+      'pricing.payment-value': 'Efectivo en pesos, Nequi, Daviplata o Wise (USD).',
+      'pricing.travel-label': 'Desplazamiento',
+      'pricing.travel-value': 'Incluido en Poblado, Laureles y Envigado. Otros barrios, una platica pequeña.',
+      'pricing.usd-label': 'Conversión USD',
+      'pricing.usd-value': 'Aproximada a 4,000 COP por USD. La tasa al pagar puede variar.',
+      'pricing.group-text': '¿Vienen varias? Te armo un plan personalizado para el grupo.',
+      'pricing.group-prefill': '¡Hola Laura! Vamos varias y queremos saber tarifas de grupo.',
+      'pricing.cta': 'Pedir tarifa de grupo',
+      'wa.default-text': '¡Hola Laura! Vi tu sitio web.',
+
+      'faq.eyebrow': 'Preguntas frecuentes',
+      'faq.h2': 'Lo que la gente me pregunta',
+      'faq.lede': 'Si tu pregunta no está acá, escribime nomás. Te voy a contestar con honestidad, así la respuesta sea "todavía no, pero pronto".',
+      'faq.q1': '¿Con cuánto tiempo de anticipación reservo?',
+      'faq.a1': 'Las tardes entre semana suelen estar tranquilas, muchas veces te puedo atender el mismo día o el día anterior. Los fines de semana y los domingos antes de un vuelo se llenan rápido, así que para esos cupos mejor reservá con 2 o 3 días.',
+      'faq.q2': '¿Es seguro que alguien venga a mi Airbnb?',
+      'faq.a2': 'Te entiendo perfecto, es una pregunta justa. Si querés, te mando una foto de mi cédula antes de ir, o nos vemos en la portería y subimos juntas. Los anfitriones y porteros acá ya están acostumbrados. En Medellín es supercomún que alguien venga a la casa para servicios de belleza.',
+      'faq.q3': '¿Qué idiomas hablás?',
+      'faq.a3': 'El español es mi idioma de siempre. El inglés lo estoy aprendiendo (despacito pero con ganas), así que para los detalles, Google Translate y yo somos un buen equipo. Escribime tranqui en el idioma que más fácil te quede, nos entendemos.',
+      'faq.q4': '¿Hacés decoración de uñas o solo esmalte básico?',
+      'faq.a4': 'Cosas sencillas como puntas francesas, una uña de acento o líneas básicas, sí, todo bien. Para algo muy elaborado (3D, arte superdetallado), te digo de frente y te recomiendo a una amiga que se dedica a eso.',
+      'faq.q5': '¿Cómo te pago?',
+      'faq.a5': 'Lo más fácil es efectivo en pesos. También recibo Nequi, Daviplata y transferencias internacionales por Wise. Todavía no tengo datáfono, ¡disculpame!',
+      'faq.q6': '¿Puedo reservar para un grupo? (despedida, amigas de visita)',
+      'faq.a6': '¡Claro que sí, me encantan! Puedo atender hasta 3 o 4 personas seguidas en el mismo lugar. Decime cuántas son y a qué hora, y armo un plan para el grupo.',
+      'faq.q7': '¿Qué pasa si se me salta el esmalte después?',
+      'faq.a7': 'Si el manicure en gel se te salta dentro de los primeros 5 días, mandame una foto y voy a arreglártelo sin costo. El esmalte normal no tiene la misma garantía porque no está hecho para durar tanto, pero siempre te digo de frente cuál te sirve mejor para la semana que tenés planeada.',
+
+      'footer.h2': '¿Listas para unas uñas divinas?',
+      'footer.lede': 'Mandame un WhatsApp y buscamos un momento que te quede bien. Suelo responder en menos de 15 minutos.',
+      'footer.cta': 'Escribime por WhatsApp',
+      'footer.brand': 'Laura Nails · Medellín, Colombia'
+    },
+    en: {
+      'meta.title': 'Laura Nails | Mani & Pedi at Your Place in Medellín',
+      'meta.description': 'Hola! I\'m Laura. I do manicures and pedicures at your hotel, Airbnb, or apartment in Medellín. Message me on WhatsApp.',
+      'lang.es-aria': 'Switch to Spanish',
+      'lang.en-aria': 'Switch to English',
+
+      'nav.services': 'Services',
+      'nav.about': 'About',
+      'nav.pricing': 'Pricing',
+      'nav.faq': 'FAQ',
+      'nav.cta': 'Message me',
+      'nav.menu-open': 'Open menu',
+      'nav.menu-close': 'Close menu',
+      'nav.menu-label': 'Menu',
+      'fab.aria': 'Message me on WhatsApp',
+
+      'hero.eyebrow': 'Mani & Pedi at Your Place · Medellín',
+      'hero.h1-em': 'Pretty',
+      'hero.h1-rest': 'Nails,\nRight Where You Are',
+      'hero.portrait-alt': 'Laura showing her nails, nail tech in Medellín',
+      'hero.lede': 'Hola! I\'m Laura, born and raised here. I come to your hotel, Airbnb, or apartment so you can sit back, relax, and still leave Medellín looking cute.',
+      'hero.cta-primary': 'Message me on WhatsApp',
+      'hero.cta-secondary': 'See Services',
+      'hero.trust-1': 'I work around your plans',
+      'hero.trust-2': 'Poblado, Laureles & Envigado',
+      'hero.trust-3': 'Spanish, English with a little help',
+
+      'services.eyebrow': 'What I Do',
+      'services.h2': 'Mani, Pedi,\nor Both?',
+      'services.lede': 'Travel is on me inside Poblado, Laureles, and Envigado. I bring all my stuff and we take our time. No rushing.',
+      'services.classic-title': 'Classic Manicure',
+      'services.classic-desc': 'Shaping, cuticles, a hand massage, and any color you want. Classic for a reason.',
+      'services.classic-time': '45 min',
+      'services.gel-title': 'Gel Manicure',
+      'services.gel-desc': 'Gel that lasts two to three weeks without chipping. Same care as the classic, locked in shiny.',
+      'services.gel-time': '60 min',
+      'services.deluxe-title': 'Deluxe Pedicure',
+      'services.deluxe-desc': 'Soak, scrub, callus work, a real massage, polish. This is the one people book twice.',
+      'services.deluxe-time': '75 min',
+      'services.foot-text': 'Not sure which one? Text me and I\'ll help you pick.',
+      'services.foot-cta': 'Just text me',
+      'services.alt-classic': 'Classic manicure',
+      'services.alt-gel': 'Gel manicure',
+      'services.alt-deluxe': 'Deluxe pedicure',
+
+      'about.eyebrow': 'Meet Laura',
+      'about.h2': 'A little\nabout me',
+      'about.p1': 'I\'m Laura. Paisa, born and raised, never lived anywhere else. I studied nails here in Medellín and I\'ve been doing them for friends, neighbors, and my mom for the past two years. Now I\'m doing them for people visiting the city too.',
+      'about.p2': 'I know how it goes when you\'re traveling. The last thing you want is to figure out where the salon is, or how to ask for what you want in español. So I bring everything to you. Tools, polishes, gel lamp, towels. You sit there and pick a color.',
+      'about.chip-1': 'Properly trained',
+      'about.chip-2': 'Clean tools, always',
+      'about.chip-3': 'Polishes I love',
+      'about.chip-4': 'Flexible hours',
+      'about.cta': 'Say hola on WhatsApp',
+      'about.alt': 'Laura at her studio in Medellín',
+
+      'how.eyebrow': 'How It Works',
+      'how.h2': 'Three Quick Steps',
+      'how.s1-title': 'Text Me',
+      'how.s1-desc': 'Tell me where you\'re staying and when you\'d like to meet. I usually reply in a few minutes.',
+      'how.s2-title': 'I Come to You',
+      'how.s2-desc': 'I show up with everything. Lamp, polishes, towels, tools. You don\'t have to set up a thing.',
+      'how.s3-title': 'Pretty Nails, Done',
+      'how.s3-desc': 'Cute nails and a chill afternoon. I\'ll check in after to make sure you\'re loving them.',
+      'how.cta': 'Pick a Time on WhatsApp',
+
+      'pricing.eyebrow': 'What It Costs',
+      'pricing.h2': 'What You See\nIs What You Pay',
+      'pricing.basics': 'Services',
+      'pricing.basics-1-name': 'Classic Manicure',
+      'pricing.basics-1-time': '45 min',
+      'pricing.basics-1-incl': 'shaping, cuticles, hand massage, regular polish',
+      'pricing.basics-1-text': 'Hi Laura! I\'d like to book a Classic Manicure ($45,000 COP).',
+      'pricing.basics-2-name': 'Gel Manicure',
+      'pricing.basics-2-time': '60 min',
+      'pricing.basics-2-incl': 'gel that lasts 2-3 weeks, chip-free',
+      'pricing.basics-2-text': 'Hi Laura! I\'d like to book a Gel Manicure ($65,000 COP).',
+      'pricing.basics-3-name': 'Deluxe Pedicure',
+      'pricing.basics-3-time': '75 min',
+      'pricing.basics-3-incl': 'soak, scrub, calluses, massage, polish',
+      'pricing.basics-3-text': 'Hi Laura! I\'d like to book a Deluxe Pedicure ($75,000 COP).',
+      'pricing.basics-4-name': 'Mani + Pedi Combo',
+      'pricing.basics-4-time': '2 hrs',
+      'pricing.basics-4-incl': 'full manicure + pedicure. Save $10,000 COP.',
+      'pricing.basics-4-text': 'Hi Laura! I\'d like to book the Mani + Pedi Combo ($110,000 COP).',
+      'pricing.most-popular': 'Most popular',
+      'pricing.book': 'Book',
+      'pricing.addons': 'Add extras',
+      'pricing.addons-intro': 'Add to any service.',
+      'pricing.addon-1': 'Nail Art (per nail)',
+      'pricing.addon-2': 'French Tips',
+      'pricing.addon-3': 'Gel Removal',
+      'pricing.addon-4': 'Extra Massage Time (15 min)',
+      'pricing.payment-label': 'Payment',
+      'pricing.payment-value': 'Cash in pesos, Nequi, Daviplata, or Wise (USD).',
+      'pricing.travel-label': 'Travel',
+      'pricing.travel-value': 'Included in Poblado, Laureles, and Envigado. Other areas, a small fee.',
+      'pricing.usd-label': 'USD conversion',
+      'pricing.usd-value': 'Approx. 4,000 COP per USD. Actual rate at payment may vary.',
+      'pricing.group-text': 'Coming with a group? I\'ll put together a custom plan.',
+      'pricing.group-prefill': 'Hi Laura! We\'re a group and want to know about group rates.',
+      'pricing.cta': 'Ask for group rates',
+      'wa.default-text': 'Hi Laura! I saw your website.',
+
+      'faq.eyebrow': 'Frequently Asked',
+      'faq.h2': 'Things people actually ask',
+      'faq.lede': 'If your question isn\'t here, just send me a message. I\'ll always be honest with you, even if the honest answer is "not yet, but soon!"',
+      'faq.q1': 'How far in advance should I book?',
+      'faq.a1': 'Weekday afternoons are usually pretty open, often I can fit you in same-day or the day before. Weekends and Sunday slots before flights book up fastest, so for those, try 2 or 3 days ahead.',
+      'faq.q2': 'Is it really safe to have someone come to my Airbnb?',
+      'faq.a2': 'I totally get it, fair question. If you want, I can send a photo of my ID before I come, or meet you in the lobby and we head up together. Hosts and doormen here are used to it. Having someone come over for beauty stuff is super common in Medellín.',
+      'faq.q3': 'What languages do you speak?',
+      'faq.a3': 'Spanish is what I speak for real. English I\'m still learning (slow but going!), so Google Translate and I have become best friends. Message me in either language and we\'ll figure it out, no stress.',
+      'faq.q4': 'Do you do nail art or just basic polish?',
+      'faq.a4': 'Simple stuff like French tips, an accent nail, or basic line work, yes, all good. Anything really elaborate (3D, super detailed art), I\'ll be honest with you and point you to a friend who specializes in that.',
+      'faq.q5': 'How do I pay?',
+      'faq.a5': 'Cash in pesos is the easiest. I also take Nequi, Daviplata, and international transfers through Wise. No credit-card machine yet, sorry!',
+      'faq.q6': 'Can I book for a group? (bachelorette, friends visiting)',
+      'faq.a6': 'Yes please, I love these. I can do up to 3 or 4 people back-to-back at the same place. Tell me how many of you and when, and I\'ll put a plan together for the group.',
+      'faq.q7': 'What if my polish chips after?',
+      'faq.a7': 'If a gel manicure chips within 5 days, send me a photo and I\'ll come fix it for free. Regular polish doesn\'t have the same guarantee since it\'s not made to last that way, but I\'ll always tell you straight up which one fits the week you\'ve got planned.',
+
+      'footer.h2': 'Ready for pretty nails?',
+      'footer.lede': 'Send me a WhatsApp and we\'ll find a time that works. I usually answer within 15 minutes.',
+      'footer.cta': 'Message me on WhatsApp',
+      'footer.brand': 'Laura Nails · Medellín, Colombia'
+    }
+  };
+
+  function escapeHTML(s) {
+    return s.replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function setLang(lang) {
+    if (!I18N[lang]) return;
+    var dict = I18N[lang];
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.dataset.i18n;
+      var txt = dict[key];
+      if (txt == null) return;
+      if (txt.indexOf('\n') !== -1) {
+        el.innerHTML = txt.split('\n').map(escapeHTML).join('<br>');
+      } else {
+        el.textContent = txt;
+      }
+    });
+
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
+      var key = el.dataset.i18nAria;
+      if (dict[key] != null) el.setAttribute('aria-label', dict[key]);
+    });
+
+    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      var key = el.dataset.i18nAlt;
+      if (dict[key] != null) el.setAttribute('alt', dict[key]);
+    });
+
+    if (dict['meta.title']) document.title = dict['meta.title'];
+    var metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && dict['meta.description']) metaDesc.setAttribute('content', dict['meta.description']);
+
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    });
+
+    // Refresh WhatsApp links so prefilled message text matches the active language
+    document.querySelectorAll('[data-wa]').forEach(function (el) {
+      var key = el.dataset.waTextKey || 'wa.default-text';
+      var msg = dict[key];
+      el.setAttribute('href', msg ? WA_URL + '?text=' + encodeURIComponent(msg) : WA_URL);
+    });
+
+    try { localStorage.setItem('lang', lang); } catch (e) { /* private mode, ignore */ }
+  }
+
+  // ── Single source of truth for the WhatsApp number
+  var WA_URL = 'https://wa.me/573016913136';
+
+  // ── Language toggle wiring
+  document.querySelectorAll('.lang-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () { setLang(btn.dataset.lang); });
+  });
+
+  // ── Initialize language (from storage, fallback to Spanish default)
+  var stored = null;
+  try { stored = localStorage.getItem('lang'); } catch (e) { /* ignore */ }
+  setLang(stored && I18N[stored] ? stored : 'es');
+
+  // ── Nav scroll state + FAB visibility
+  var nav = document.getElementById('nav');
+  var fab = document.getElementById('wa-fab');
+  function onScroll() {
+    var y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 100);
+    if (fab) fab.classList.toggle('visible', y > 600);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ── Mobile menu
+  var menu = document.getElementById('menu');
+  var openBtn = document.getElementById('menu-open');
+  function openMenu() {
+    menu.classList.add('open');
+    menu.setAttribute('aria-hidden', 'false');
+    openBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    menu.classList.remove('open');
+    menu.setAttribute('aria-hidden', 'true');
+    openBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+  openBtn.addEventListener('click', openMenu);
+  document.querySelectorAll('[data-close]').forEach(function (el) {
+    el.addEventListener('click', closeMenu);
+  });
+  document.getElementById('menu-close').addEventListener('click', closeMenu);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.classList.contains('open')) closeMenu();
+  });
+
+  // ── FAQ accordion (single-open, with mobile auto-scroll into view)
+  var faqs = document.querySelectorAll('.faq-q');
+  faqs.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var wasOpen = btn.getAttribute('aria-expanded') === 'true';
+      faqs.forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+      btn.setAttribute('aria-expanded', wasOpen ? 'false' : 'true');
+      // On mobile, scroll the opened question into view so the answer is visible
+      if (!wasOpen && window.innerWidth < 768) {
+        setTimeout(function () {
+          btn.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
+      }
+    });
+  });
+
+  // ── Scroll reveal
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+})();
+</script>
+
+</body>
+</html>
