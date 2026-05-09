@@ -1026,6 +1026,13 @@
   /* ─────────────── MOBILE TUNING FOR NEW ENHANCEMENTS ─────────────── */
 
   @media (max-width: 900px) {
+    /* Photo collage ABOVE text on mobile so visitors see imagery first */
+    .d3-hero-grid { gap: 32px; }
+    .d3-hero-visual { order: -1; }
+    /* Override the unconditional desktop 110/128px h1 from the enhancement block */
+    .d3-h1 { font-size: 56px; }
+    .d3-h1 .d3-h1-script { font-size: 1em; }
+
     /* Smaller stamp tucked into corner */
     .d3-stamp-wrap { width: 92px; height: 92px; top: -8px; right: 4px; }
     .d3-stamp-center span { font-size: 22px; }
@@ -1075,6 +1082,10 @@
   }
 
   @media (max-width: 560px) {
+    /* Hero h1 sized for narrow phones */
+    .d3-h1 { font-size: 44px; }
+    .d3-h1 .d3-h1-script { font-size: 0.92em; }
+
     /* Stamp even smaller, hide stickers to keep hero clean */
     .d3-stamp-wrap { width: 76px; height: 76px; top: -4px; right: 4px; }
     .d3-stamp-center span { font-size: 18px; }
