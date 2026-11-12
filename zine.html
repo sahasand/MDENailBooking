@@ -1,0 +1,1929 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Laura Nails · Manicure y Pedicure a Domicilio en Medellín</title>
+<meta name="description" content="¡Hola! Soy Laura. Hago manicure y pedicure en tu hotel, Airbnb o apartamento en Medellín. Escribime por WhatsApp." />
+<meta name="theme-color" content="#fef7ec" />
+
+<!-- Favicon: inline SVG with brand mark -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff8a65'/%3E%3Cstop offset='0.5' stop-color='%23d4593a'/%3E%3Cstop offset='1' stop-color='%234a1e3a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%23fef7ec'/%3E%3Ccircle cx='50' cy='50' r='36' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-family='Georgia,serif' font-size='44' font-style='italic' font-weight='700' text-anchor='middle' fill='%23fef7ec'%3EL%3C/text%3E%3C/svg%3E" />
+
+<!-- Social link preview (OG / Twitter) -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://sahasand.github.io/MDENailBooking/" />
+<meta property="og:title" content="Laura Nails · Manicure y Pedicure a Domicilio en Medellín" />
+<meta property="og:description" content="Voy a tu hotel, Airbnb o apartamento. Escribime por WhatsApp." />
+<meta property="og:image" content="https://sahasand.github.io/MDENailBooking/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Laura Nails: uñas pintadas a mano, manicure a domicilio en Medellín" />
+<meta property="og:locale" content="es_CO" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Laura Nails · Manicure y Pedicure a Domicilio en Medellín" />
+<meta name="twitter:description" content="Voy a tu hotel, Airbnb o apartamento. Escribime por WhatsApp." />
+<meta name="twitter:image" content="https://sahasand.github.io/MDENailBooking/og-image.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,700;1,9..144,900&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; scroll-behavior: smooth; }
+  body { font-family: 'Outfit', system-ui, sans-serif; background: #fef7ec; }
+  *, *::before, *::after { box-sizing: border-box; }
+
+  .d3-root {
+    --cream: #fef7ec;
+    --peach: #ffd9b8;
+    --coral: #ff8a65;
+    --terracotta: #d4593a;
+    --plum: #4a1e3a;
+    --gold: #f5b942;
+    --olive: #6b7f3a;
+    --ink: #2a1810;
+    font-family: 'Outfit', system-ui, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.5;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .d3-display { font-family: 'Fraunces', 'Times New Roman', serif; font-weight: 600; letter-spacing: -0.025em; line-height: 1; }
+  .d3-script { font-family: 'Caveat', cursive; }
+  .d3-mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* NAV */
+  .d3-nav {
+    position: sticky; top: 0; z-index: 50;
+    padding: 18px 32px;
+    background: rgba(254, 247, 236, 0.92);
+    backdrop-filter: blur(20px);
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid rgba(212,89,58,0.15);
+  }
+  .d3-logo { display: flex; align-items: center; gap: 12px; }
+  .d3-logo-mark {
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, var(--coral), var(--terracotta) 50%, var(--plum));
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    position: relative;
+  }
+  .d3-logo-mark::after {
+    content: ""; position: absolute; inset: 6px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.5), transparent 50%);
+  }
+  .d3-logo-text { display: flex; flex-direction: column; line-height: 1; }
+  .d3-logo-text strong { font-family: 'Fraunces', serif; font-weight: 600; font-size: 19px; letter-spacing: -0.02em; }
+  .d3-logo-text small { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.55; margin-top: 3px; }
+
+  .d3-nav-links { display: flex; gap: 28px; align-items: center; font-size: 14px; }
+  .d3-nav-links a { color: var(--ink); text-decoration: none; opacity: 0.7; }
+  .d3-nav-links a:hover { opacity: 1; color: var(--terracotta); }
+  .d3-nav-cta {
+    background: var(--terracotta); color: white !important;
+    padding: 11px 20px; border-radius: 999px;
+    font-weight: 600; font-size: 14px;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 6px;
+    opacity: 1 !important;
+  }
+  .d3-lang-toggle { display: flex; gap: 0; border: 1px solid rgba(42,24,16,0.2); border-radius: 999px; padding: 2px; font-size: 12px; font-weight: 600; }
+  .d3-lang-toggle button { border: none; background: transparent; padding: 5px 11px; border-radius: 999px; cursor: pointer; color: var(--ink); opacity: 0.5; font-family: inherit; }
+  .d3-lang-toggle button[aria-pressed="true"] { background: var(--ink); color: var(--cream); opacity: 1; }
+
+  /* HERO */
+  .d3-hero {
+    position: relative;
+    padding: 80px 32px 100px;
+    overflow: hidden;
+  }
+  .d3-sunset {
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 800px; height: 800px;
+    background: radial-gradient(circle at center, var(--gold) 0%, var(--coral) 30%, var(--terracotta) 50%, transparent 70%);
+    opacity: 0.6;
+    filter: blur(20px);
+    pointer-events: none;
+  }
+  .d3-hero-grid {
+    display: grid; grid-template-columns: 1.1fr 1fr;
+    gap: 64px; align-items: center;
+    max-width: 1280px; margin: 0 auto;
+    position: relative; z-index: 2;
+  }
+  .d3-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 16px; border-radius: 999px;
+    background: white;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+    color: var(--terracotta);
+    border: 1px solid rgba(212,89,58,0.2);
+    margin-bottom: 28px;
+  }
+  .d3-eyebrow::before { content: "📍"; font-size: 14px; }
+  .d3-h1 { font-size: 92px; margin: 0; }
+  .d3-h1 .d3-h1-script {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    color: var(--terracotta);
+    letter-spacing: -0.01em;
+    font-size: 1.05em;
+    display: inline-block;
+    transform: rotate(-2deg);
+  }
+  .d3-sub { font-size: 19px; color: rgba(42,24,16,0.7); max-width: 480px; margin: 28px 0 36px; line-height: 1.55; }
+  .d3-cta-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .d3-btn-primary {
+    background: var(--ink); color: var(--cream);
+    padding: 16px 26px; border-radius: 999px;
+    font-weight: 600; font-size: 15px;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 10px;
+    transition: transform 0.15s;
+  }
+  .d3-btn-primary:hover { transform: translateY(-2px); }
+  .d3-btn-secondary {
+    color: var(--ink);
+    padding: 16px 8px;
+    font-weight: 600; font-size: 15px;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 6px;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .d3-hero-side-meta {
+    margin-top: 48px;
+    display: grid; grid-template-columns: repeat(3, auto);
+    gap: 32px;
+    padding-top: 28px;
+    border-top: 1px dashed rgba(42,24,16,0.25);
+  }
+  .d3-stat-num { font-family: 'Fraunces', serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; color: var(--terracotta); }
+  .d3-stat-label { font-size: 12px; opacity: 0.6; margin-top: 2px; }
+
+  /* HERO VISUAL: collage */
+  .d3-hero-visual {
+    position: relative;
+    aspect-ratio: 1;
+  }
+  .d3-photo-card {
+    position: absolute;
+    background: var(--peach);
+    border: 8px solid white;
+    box-shadow: 0 16px 40px rgba(74,30,58,0.15);
+    overflow: hidden;
+  }
+  .d3-photo-card.p1 { top: 0%; left: 8%; width: 55%; aspect-ratio: 4/5; transform: rotate(-4deg); background: var(--coral); }
+  .d3-photo-card.p2 { top: 18%; right: 0%; width: 50%; aspect-ratio: 1/1; transform: rotate(3deg); background: var(--plum); border-radius: 50%; }
+  .d3-photo-card.p3 { bottom: 0%; left: 0%; width: 48%; aspect-ratio: 1/1; transform: rotate(-2deg); background: var(--gold); }
+  .d3-photo-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .d3-photo-card.p1 img { object-position: center 18%; }
+  .d3-photo-card.p2 img { object-position: center 78%; transform: scale(1.15); transform-origin: center 65%; }
+  .d3-leaf {
+    position: absolute;
+    font-size: 80px;
+    z-index: 2;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  }
+  .d3-leaf.l1 { top: -20px; right: 10%; transform: rotate(15deg); }
+  .d3-leaf.l2 { bottom: -30px; right: -10px; transform: rotate(-25deg); }
+  .d3-tape {
+    position: absolute;
+    background: rgba(245,185,66,0.7);
+    width: 60px; height: 22px;
+    z-index: 3;
+  }
+  .d3-tape.t1 { top: -12px; left: 30px; transform: rotate(-8deg); }
+  .d3-tape.t2 { top: -12px; right: 20px; transform: rotate(6deg); }
+
+  .d3-handwritten {
+    font-family: 'Caveat', cursive;
+    color: var(--terracotta);
+    font-size: 24px;
+    position: absolute;
+    z-index: 4;
+  }
+  .d3-handwritten.h1 { top: -8px; left: 60%; transform: rotate(-8deg); }
+  .d3-handwritten.h1::after { content: " ↘"; }
+  .d3-handwritten.h2 { bottom: 50%; left: -8%; transform: rotate(-3deg); color: var(--plum); }
+
+  /* MARQUEE */
+  .d3-marquee {
+    background: var(--terracotta); color: var(--cream);
+    padding: 16px 0;
+    overflow: hidden;
+  }
+  .d3-marquee-track { display: flex; gap: 48px; animation: d3marquee 30s linear infinite; white-space: nowrap; }
+  @keyframes d3marquee { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+  .d3-marquee-item { font-family: 'Fraunces', serif; font-style: italic; font-size: 22px; font-weight: 500; display: flex; align-items: center; gap: 48px; }
+  .d3-marquee-item::after { content: "✿"; color: var(--gold); }
+
+  /* SERVICES */
+  .d3-services { padding: 100px 32px; max-width: 1280px; margin: 0 auto; position: relative; }
+  .d3-section-head { text-align: center; margin-bottom: 64px; }
+  .d3-section-eyebrow {
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    color: var(--terracotta);
+    font-weight: 600;
+  }
+  .d3-section-title { font-size: 64px; margin-top: 0; }
+  .d3-section-title em { color: var(--terracotta); font-style: italic; font-family: 'Caveat', cursive; font-weight: 700; font-size: 1.1em; }
+  .d3-section-sub { font-size: 17px; color: rgba(42,24,16,0.65); max-width: 540px; margin: 16px auto 0; }
+
+  .d3-svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .d3-svc-card {
+    background: white;
+    border-radius: 24px;
+    padding: 28px;
+    position: relative;
+    transition: transform 0.2s;
+    border: 1px solid rgba(212,89,58,0.1);
+  }
+  .d3-svc-card:hover { transform: translateY(-4px); }
+  .d3-svc-card.feat {
+    background: linear-gradient(160deg, var(--peach) 0%, var(--coral) 100%);
+  }
+  .d3-svc-card.feat-2 {
+    background: linear-gradient(135deg, var(--plum) 0%, var(--terracotta) 100%);
+    color: var(--cream);
+  }
+  .d3-svc-card.feat-2 .d3-svc-desc { color: rgba(254,247,236,0.85); }
+  .d3-svc-card.feat-2 .d3-svc-bottom { border-color: rgba(254,247,236,0.2); }
+  .d3-svc-card.feat-2 .d3-svc-tag { background: var(--gold); color: var(--ink); }
+  .d3-svc-card.wide { grid-column: 1 / -1; padding: 36px 40px; }
+  .d3-svc-card.wide .d3-svc-name { font-size: 38px; }
+  .d3-svc-card.wide .d3-svc-desc { font-size: 16px; max-width: 560px; }
+  .d3-svc-card.wide .d3-svc-bottom { padding-top: 24px; }
+  .d3-svc-book {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: var(--ink);
+    color: var(--cream);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  .d3-svc-card.feat .d3-svc-book { background: var(--ink); color: var(--cream); }
+  .d3-svc-card.feat-2 .d3-svc-book { background: var(--gold); color: var(--ink); }
+
+  .d3-svc-tag {
+    display: inline-block; padding: 5px 12px; border-radius: 999px;
+    background: var(--ink); color: var(--cream);
+    font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .d3-svc-name { font-family: 'Fraunces', serif; font-size: 28px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; }
+  .d3-svc-desc { font-size: 14px; opacity: 0.7; margin: 12px 0 28px; line-height: 1.55; }
+  .d3-svc-bottom { display: flex; justify-content: space-between; align-items: baseline; padding-top: 20px; border-top: 1px dashed rgba(42,24,16,0.2); }
+  .d3-svc-price { font-family: 'Fraunces', serif; font-size: 28px; font-weight: 600; letter-spacing: -0.02em; }
+  .d3-svc-currency { font-size: 13px; opacity: 0.6; font-weight: 400; margin-left: 4px; }
+  .d3-svc-time { font-size: 12px; opacity: 0.6; font-family: 'JetBrains Mono', monospace; }
+
+  /* ABOUT */
+  .d3-about {
+    padding: 100px 32px;
+    background: linear-gradient(180deg, var(--cream) 0%, var(--peach) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .d3-about-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: center; position: relative; z-index: 2; }
+  .d3-about-photo-wrap { position: relative; aspect-ratio: 4/5; }
+  .d3-about-photo {
+    position: absolute; inset: 0;
+    background: var(--terracotta);
+    border: 10px solid white;
+    box-shadow: 0 20px 50px rgba(74,30,58,0.2);
+    transform: rotate(-2deg);
+    overflow: hidden;
+  }
+  .d3-about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .d3-about-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+  .d3-about-chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 7px 14px; border-radius: 999px;
+    background: white; border: 1px solid rgba(212,89,58,0.18);
+    font-size: 13px; font-weight: 500;
+    color: var(--ink);
+  }
+  .d3-about-chip::before { content: "✿"; color: var(--terracotta); }
+  .d3-about-quote {
+    position: absolute;
+    bottom: -40px; right: -20px;
+    background: var(--gold);
+    padding: 18px 22px;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: var(--ink);
+    transform: rotate(4deg);
+    max-width: 200px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    z-index: 3;
+    line-height: 1.2;
+  }
+  .d3-about-eyebrow { font-family: 'Caveat', cursive; font-size: 28px; color: var(--terracotta); }
+  .d3-about-title { font-size: 80px; line-height: 0.95; margin: 8px 0 0; }
+  .d3-about-title em { font-style: italic; color: var(--terracotta); font-family: 'Caveat', cursive; font-weight: 700; font-size: 1.05em; }
+  .d3-about-text { font-size: 17px; line-height: 1.65; margin: 16px 0; max-width: 520px; }
+  .d3-about-sig { font-family: 'Caveat', cursive; font-size: 40px; color: var(--terracotta); margin-top: 20px; }
+
+  /* HOW */
+  .d3-how { padding: 100px 32px; max-width: 1280px; margin: 0 auto; position: relative; }
+  .d3-steps {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+    margin-top: 48px;
+    position: relative;
+  }
+  .d3-step {
+    padding: 32px 24px 28px;
+    position: relative;
+    text-align: center;
+  }
+  .d3-step::after {
+    content: ""; position: absolute;
+    top: 70px; right: -8px;
+    width: 16px; height: 16px;
+    border-top: 2px dashed var(--terracotta);
+    border-right: 2px dashed var(--terracotta);
+    transform: rotate(45deg);
+    opacity: 0.5;
+  }
+  .d3-step:last-child::after { display: none; }
+  .d3-step-num {
+    width: 80px; height: 80px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--coral), var(--terracotta));
+    color: white;
+    display: grid; place-items: center;
+    font-family: 'Fraunces', serif;
+    font-size: 32px; font-weight: 600;
+    font-style: italic;
+    box-shadow: 0 12px 24px rgba(212,89,58,0.25);
+  }
+  .d3-step:nth-child(2) .d3-step-num { background: linear-gradient(135deg, var(--gold), var(--coral)); }
+  .d3-step:nth-child(3) .d3-step-num { background: linear-gradient(135deg, var(--terracotta), var(--plum)); }
+  .d3-step-t { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 600; letter-spacing: -0.02em; }
+  .d3-step-d { font-size: 14px; opacity: 0.7; line-height: 1.6; margin-top: 10px; max-width: 220px; margin-left: auto; margin-right: auto; }
+
+  /* FAQ */
+  .d3-faq { padding: 100px 32px; max-width: 880px; margin: 0 auto; }
+  .d3-faq-list { margin-top: 48px; }
+  .d3-faq-item {
+    background: white;
+    border-radius: 20px;
+    padding: 24px 28px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(212,89,58,0.1);
+  }
+  .d3-faq-q { font-family: 'Fraunces', serif; font-size: 21px; font-weight: 600; letter-spacing: -0.01em; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .d3-faq-q-icon {
+    flex-shrink: 0;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--peach); color: var(--terracotta);
+    display: grid; place-items: center;
+    font-size: 18px;
+  }
+  .d3-faq-a { font-size: 15px; color: rgba(42,24,16,0.7); margin-top: 12px; line-height: 1.6; }
+
+  /* CTA */
+  .d3-cta {
+    padding: 120px 32px;
+    background: linear-gradient(160deg, var(--plum) 0%, var(--terracotta) 50%, var(--gold) 100%);
+    color: var(--cream);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .d3-cta::before {
+    content: ""; position: absolute;
+    top: -100px; left: 50%; transform: translateX(-50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(245,185,66,0.4), transparent 60%);
+  }
+  .d3-cta-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 2; }
+  .d3-cta-eyebrow { font-family: 'Caveat', cursive; font-size: 32px; color: var(--gold); }
+  .d3-cta-title { font-size: 88px; margin: 8px 0 0; }
+  .d3-cta-title em { font-family: 'Caveat', cursive; font-weight: 700; font-style: normal; color: var(--gold); font-size: 1.05em; }
+  .d3-cta-sub { font-size: 19px; opacity: 0.85; margin: 24px auto 40px; max-width: 540px; }
+  .d3-cta-btn {
+    background: var(--cream); color: var(--ink);
+    padding: 22px 36px; border-radius: 999px;
+    font-weight: 700; font-size: 18px;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 12px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+  }
+  .d3-cta-meta {
+    display: flex; gap: 32px; justify-content: center; flex-wrap: wrap;
+    margin-top: 40px; font-size: 14px;
+    opacity: 0.85;
+  }
+
+  /* FOOTER */
+  .d3-footer {
+    background: var(--ink);
+    color: var(--peach);
+    padding: 32px;
+    text-align: center;
+  }
+  .d3-footer-logo { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 600; }
+  .d3-footer-sub { font-size: 13px; opacity: 0.5; margin-top: 8px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .d3-nav { padding: 14px 18px; }
+    .d3-nav-links { gap: 14px; font-size: 13px; }
+    .d3-nav-links a:not(.d3-nav-cta) { display: none; }
+    .d3-hero { padding: 48px 20px 60px; }
+    .d3-hero-grid { grid-template-columns: 1fr; gap: 48px; }
+    .d3-h1 { font-size: 52px; }
+    .d3-services, .d3-about, .d3-how, .d3-faq { padding-left: 20px; padding-right: 20px; }
+    .d3-svc-grid { grid-template-columns: repeat(2, 1fr); }
+    .d3-about-grid { grid-template-columns: 1fr; gap: 56px; }
+    .d3-section-title { font-size: 44px; }
+    .d3-about-title { font-size: 56px; }
+    .d3-cta-title { font-size: 56px; }
+    .d3-steps { grid-template-columns: 1fr; }
+    .d3-step::after { display: none; }
+    .d3-svc-card.wide { padding: 28px; }
+    .d3-svc-card.wide .d3-svc-name { font-size: 28px; }
+  }
+  @media (max-width: 560px) {
+    .d3-svc-grid { grid-template-columns: 1fr; }
+    .d3-h1 { font-size: 44px; }
+    .d3-cta-title { font-size: 44px; }
+    .d3-about-title { font-size: 44px; }
+    .d3-cta-meta { gap: 16px; font-size: 13px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .d3-marquee-track { animation: none; }
+    .d3-btn-primary { transition: none; }
+    .d3-svc-card { transition: none; }
+  }
+
+  /* ─────────────── DESIGN ENHANCEMENTS ─────────────── */
+
+  /* Subtle film-grain overlay over the entire page */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+
+  /* Hero typography upgrade */
+  .d3-h1 { font-size: 110px; font-weight: 700; }
+  .d3-h1 .d3-h1-script { font-size: 1.15em; position: relative; display: inline-block; }
+  @media (min-width: 1100px) { .d3-h1 { font-size: 128px; } }
+
+  /* Hand-drawn SVG underline under the cursive accent */
+  .d3-h1-underline {
+    position: absolute;
+    left: -8px; right: -8px; bottom: -22px;
+    height: 26px;
+    width: calc(100% + 16px);
+    overflow: visible;
+    pointer-events: none;
+  }
+  .d3-h1-underline path {
+    stroke: var(--gold);
+    stroke-width: 5;
+    fill: none;
+    stroke-linecap: round;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: drawLine 1.6s 0.7s cubic-bezier(.22,.9,.32,1) forwards;
+  }
+  @keyframes drawLine { to { stroke-dashoffset: 0; } }
+
+  /* Spinning circular stamp on hero */
+  .d3-stamp-wrap {
+    position: absolute;
+    top: -18px; right: -28px;
+    width: 130px; height: 130px;
+    z-index: 6;
+    pointer-events: none;
+  }
+  @media (min-width: 1100px) { .d3-stamp-wrap { width: 150px; height: 150px; right: -40px; } }
+  .d3-stamp-disk {
+    position: absolute; inset: 0;
+    border-radius: 50%;
+    background: var(--terracotta);
+    box-shadow: 0 12px 28px rgba(212,89,58,0.35);
+    animation: stampSpin 22s linear infinite;
+  }
+  .d3-stamp-disk svg { width: 100%; height: 100%; }
+  .d3-stamp-disk text { fill: var(--cream); font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 600; letter-spacing: 4px; }
+  .d3-stamp-center {
+    position: absolute; inset: 0;
+    display: grid; place-items: center;
+    color: var(--cream);
+    text-align: center;
+    pointer-events: none;
+  }
+  .d3-stamp-center span {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 0.9;
+  }
+  .d3-stamp-center small {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    margin-top: 4px;
+    opacity: 0.9;
+  }
+  @keyframes stampSpin { to { transform: rotate(360deg); } }
+
+  /* Floating sticker badges */
+  .d3-sticker {
+    position: absolute;
+    z-index: 5;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 9px 14px;
+    border-radius: 999px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 2px solid currentColor;
+    background: var(--cream);
+    box-shadow: 4px 4px 0 var(--ink);
+    white-space: nowrap;
+  }
+  .d3-sticker.s1 { top: 10%; left: -3%; color: var(--terracotta); transform: rotate(-10deg); }
+  .d3-sticker.s2 { bottom: 12%; right: -2%; color: var(--plum); background: var(--gold); transform: rotate(8deg); border-color: var(--ink); }
+
+  /* Decorative dotted grid behind hero visuals */
+  .d3-hero-visual::before {
+    content: "";
+    position: absolute;
+    top: 8%; left: 6%; right: 6%; bottom: 8%;
+    background-image: radial-gradient(circle, rgba(42,24,16,0.22) 1.4px, transparent 1.4px);
+    background-size: 18px 18px;
+    pointer-events: none;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  /* Floating decorative emojis on hero */
+  .d3-hero-decor { position: absolute; pointer-events: none; z-index: 2; user-select: none; }
+  .d3-hero-decor.dec-1 { top: 14%; left: 3%; font-size: 30px; opacity: 0.65; transform: rotate(15deg); }
+  .d3-hero-decor.dec-2 { bottom: 6%; left: 36%; font-size: 24px; opacity: 0.55; transform: rotate(-22deg); }
+  .d3-hero-decor.dec-3 { top: 38%; left: 46%; font-size: 18px; opacity: 0.7; transform: rotate(-8deg); }
+
+  /* Marquee polish: thicker dashes top + bottom */
+  .d3-marquee {
+    padding: 20px 0;
+    border-top: 2px dashed rgba(254,247,236,0.4);
+    border-bottom: 2px dashed rgba(254,247,236,0.4);
+  }
+  .d3-marquee-item::after { content: " ✦ "; color: var(--gold); }
+  .d3-marquee-item:nth-child(odd)::after { content: " ✿ "; }
+  /* Counter-flow second marquee */
+  .d3-marquee.reverse {
+    background: var(--plum);
+    color: var(--gold);
+    border-color: rgba(245,185,66,0.35);
+  }
+  .d3-marquee.reverse .d3-marquee-track { animation: d3marqueeRev 38s linear infinite; }
+  .d3-marquee.reverse .d3-marquee-item { font-style: normal; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; }
+  .d3-marquee.reverse .d3-marquee-item::after { content: " · "; color: var(--terracotta); }
+  @keyframes d3marqueeRev { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+
+  /* Service cards: giant outlined number behind */
+  .d3-svc-card { overflow: hidden; }
+  .d3-svc-card::before {
+    content: attr(data-num);
+    position: absolute;
+    top: -42px; right: -10px;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 200px;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(212,89,58,0.22);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .d3-svc-card.feat::before { -webkit-text-stroke-color: rgba(74,30,58,0.22); }
+  .d3-svc-card.feat-2::before { -webkit-text-stroke-color: rgba(254,247,236,0.22); }
+  .d3-svc-card > * { position: relative; z-index: 1; }
+  .d3-svc-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .d3-svc-card:hover { transform: translateY(-6px) rotate(-0.5deg); box-shadow: 0 24px 48px rgba(74,30,58,0.20); }
+  .d3-svc-card.feat:hover { transform: translateY(-6px) rotate(0.5deg); }
+  .d3-svc-card.feat-2:hover { transform: translateY(-6px); }
+  .d3-svc-price { font-size: 36px; font-weight: 700; }
+  .d3-svc-card.wide .d3-svc-price { font-size: 48px; }
+
+  /* Service tag pill: outlined */
+  .d3-svc-tag {
+    border: 1.5px solid currentColor;
+    background: transparent;
+    color: var(--terracotta);
+  }
+  .d3-svc-card.feat .d3-svc-tag { color: var(--plum); }
+  .d3-svc-card.feat-2 .d3-svc-tag {
+    background: var(--gold);
+    color: var(--ink);
+    border-color: var(--gold);
+  }
+
+  /* About: marker-style highlight */
+  .d3-marker {
+    background: linear-gradient(180deg, transparent 55%, rgba(245,185,66,0.55) 55%);
+    padding: 0 4px;
+    margin: 0 -4px;
+  }
+  /* About: vintage stamp */
+  .d3-since {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 8px 16px;
+    border: 2px solid var(--terracotta);
+    border-radius: 6px;
+    color: var(--terracotta);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transform: rotate(-2deg);
+    background: rgba(254,247,236,0.7);
+  }
+
+  /* How: SVG curve connector */
+  .d3-step { position: relative; }
+  .d3-step::after { display: none !important; }
+  .d3-step-curve {
+    position: absolute;
+    top: 24px;
+    left: calc(100% - 14px);
+    width: 80px; height: 70px;
+    pointer-events: none;
+    z-index: 0;
+    overflow: visible;
+  }
+  .d3-step:last-child .d3-step-curve { display: none; }
+  .d3-step-curve path {
+    stroke: var(--terracotta);
+    stroke-width: 2.5;
+    fill: none;
+    stroke-dasharray: 5 6;
+    stroke-linecap: round;
+    opacity: 0.5;
+  }
+  .d3-step-curve .arrow {
+    fill: var(--terracotta);
+    opacity: 0.7;
+  }
+  @media (max-width: 900px) { .d3-step-curve { display: none; } }
+
+  /* Step number animation on hover */
+  .d3-step-num { transition: transform 0.3s cubic-bezier(.5,1.5,.5,1); }
+  .d3-step:hover .d3-step-num { transform: rotate(-10deg) scale(1.08); }
+
+  /* FAQ accordion */
+  .d3-faq-q { cursor: pointer; user-select: none; }
+  .d3-faq-q-icon { transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease; }
+  .d3-faq-item.open .d3-faq-q-icon {
+    transform: rotate(45deg);
+    background: var(--terracotta);
+    color: var(--cream);
+  }
+  .d3-faq-a {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.4s cubic-bezier(.4,0,.2,1), margin-top 0.3s ease;
+    margin-top: 0;
+    font-size: 15px;
+    color: rgba(42,24,16,0.7);
+    line-height: 1.6;
+  }
+  .d3-faq-a > p {
+    margin: 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .d3-faq-item.open .d3-faq-a {
+    grid-template-rows: 1fr;
+    margin-top: 12px;
+  }
+  .d3-faq-item { transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; }
+  .d3-faq-item.open { border-color: rgba(212,89,58,0.45); box-shadow: 0 6px 20px rgba(74,30,58,0.08); }
+  .d3-faq-item:hover { transform: translateY(-2px); }
+
+  /* CTA: dingbat decorations + grain */
+  .d3-cta-deco {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    font-size: 24px;
+    color: var(--gold);
+    margin: 24px 0 8px;
+    letter-spacing: 1em;
+    opacity: 0.65;
+  }
+  .d3-cta::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23m)'/%3E%3C/svg%3E");
+    opacity: 0.18;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .d3-cta-inner { z-index: 2; }
+  .d3-cta-btn { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .d3-cta-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 22px 50px rgba(0,0,0,0.32); }
+
+  /* Reveal animations on scroll */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.85s ease, transform 0.85s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .reveal.delay-1 { transition-delay: 0.08s; }
+  .reveal.delay-2 { transition-delay: 0.16s; }
+  .reveal.delay-3 { transition-delay: 0.24s; }
+  .reveal.delay-4 { transition-delay: 0.32s; }
+  .reveal.delay-5 { transition-delay: 0.4s; }
+
+  /* Page-load hero stagger */
+  .d3-hero .d3-eyebrow,
+  .d3-hero .d3-h1,
+  .d3-hero .d3-sub,
+  .d3-hero .d3-cta-row,
+  .d3-hero .d3-hero-side-meta,
+  .d3-hero .d3-hero-visual {
+    opacity: 0;
+    animation: heroIn 0.8s cubic-bezier(.22,.9,.32,1) forwards;
+  }
+  .d3-hero .d3-eyebrow { animation-delay: 0.05s; }
+  .d3-hero .d3-h1 { animation-delay: 0.15s; }
+  .d3-hero .d3-sub { animation-delay: 0.32s; }
+  .d3-hero .d3-cta-row { animation-delay: 0.42s; }
+  .d3-hero .d3-hero-side-meta { animation-delay: 0.5s; }
+  .d3-hero .d3-hero-visual { animation-delay: 0.25s; }
+  @keyframes heroIn {
+    from { opacity: 0; transform: translateY(28px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Focus polish */
+  :focus-visible { outline: 2px dashed var(--terracotta); outline-offset: 4px; border-radius: 4px; }
+  button:focus-visible, a:focus-visible { outline: 3px solid var(--terracotta); outline-offset: 4px; }
+
+  /* Reduced-motion overrides for new animations */
+  @media (prefers-reduced-motion: reduce) {
+    body::before { display: none; }
+    .d3-stamp-disk { animation: none; }
+    .d3-h1-underline path { animation: none; stroke-dashoffset: 0; }
+    .d3-hero .d3-eyebrow, .d3-hero .d3-h1, .d3-hero .d3-sub, .d3-hero .d3-cta-row, .d3-hero .d3-hero-side-meta, .d3-hero .d3-hero-visual {
+      animation: none; opacity: 1;
+    }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .d3-svc-card:hover, .d3-faq-item:hover, .d3-cta-btn:hover { transform: none; }
+    .d3-step:hover .d3-step-num { transform: none; }
+  }
+
+  /* ─────────────── ADDONS ─────────────── */
+  .d3-svc-addons {
+    margin-top: 56px;
+    padding: 32px 36px;
+    background: white;
+    border: 1.5px dashed rgba(212,89,58,0.35);
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 28px;
+    align-items: center;
+    position: relative;
+  }
+  .d3-svc-addons::before {
+    content: "✦";
+    position: absolute;
+    top: -16px; left: 32px;
+    background: var(--cream);
+    color: var(--terracotta);
+    padding: 0 12px;
+    font-size: 22px;
+    line-height: 1;
+  }
+  .d3-svc-addons-title {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    color: var(--terracotta);
+    font-size: 36px;
+    line-height: 1;
+  }
+  .d3-svc-addons-intro {
+    font-size: 13px;
+    color: rgba(42,24,16,0.6);
+    margin-top: 6px;
+    display: block;
+  }
+  .d3-svc-addons-list {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 24px;
+  }
+  .d3-svc-addons-list li {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+    padding-left: 22px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .d3-svc-addons-list li::before {
+    content: "+";
+    position: absolute;
+    left: 0; top: 0;
+    color: var(--terracotta);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  @media (max-width: 900px) {
+    .d3-svc-addons { grid-template-columns: 1fr; gap: 16px; padding: 28px 24px; }
+  }
+  @media (max-width: 480px) {
+    .d3-svc-addons-list { grid-template-columns: 1fr; }
+    .d3-svc-addons-title { font-size: 30px; }
+  }
+
+  /* ─────────────── PRICING NOTES ─────────────── */
+  .d3-pricing-notes {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 28px 0;
+    border-top: 1.5px dashed rgba(212,89,58,0.3);
+    border-bottom: 1.5px dashed rgba(212,89,58,0.3);
+  }
+  .d3-note { padding: 0 4px; position: relative; }
+  .d3-note + .d3-note::before {
+    content: "";
+    position: absolute;
+    left: -16px; top: 4px; bottom: 4px;
+    width: 1px;
+    background: repeating-linear-gradient(to bottom, rgba(212,89,58,0.25) 0 4px, transparent 4px 8px);
+  }
+  .d3-note-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .d3-note-label::before { content: "✦"; font-size: 13px; opacity: 0.7; }
+  .d3-note-value {
+    font-size: 14px;
+    color: rgba(42,24,16,0.78);
+    line-height: 1.55;
+  }
+  @media (max-width: 720px) {
+    .d3-pricing-notes { grid-template-columns: 1fr; gap: 20px; padding: 24px 0; }
+    .d3-note + .d3-note::before { display: none; }
+    .d3-note + .d3-note { padding-top: 18px; border-top: 1px dashed rgba(212,89,58,0.18); }
+  }
+
+  /* ─────────────── GROUP RATE CARD ─────────────── */
+  .d3-group-card {
+    margin-top: 44px;
+    padding: 40px 44px;
+    background: var(--plum);
+    color: var(--cream);
+    border-radius: 28px;
+    display: grid;
+    grid-template-columns: 2.4fr 1fr;
+    gap: 32px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(-0.5deg);
+    box-shadow: 0 18px 40px rgba(74,30,58,0.22);
+  }
+  .d3-group-card::before {
+    content: "";
+    position: absolute;
+    top: -60%; right: -20%;
+    width: 70%; height: 220%;
+    background: radial-gradient(circle, rgba(245,185,66,0.22), transparent 70%);
+    pointer-events: none;
+  }
+  .d3-group-card::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='gn'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23gn)'/%3E%3C/svg%3E");
+    opacity: 0.12;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+  .d3-group-card-content { position: relative; z-index: 2; }
+  .d3-group-card-eyebrow {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .d3-group-card-text {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.35;
+    margin: 0 0 22px;
+    max-width: 540px;
+  }
+  .d3-group-card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: var(--gold);
+    color: var(--ink);
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.2s cubic-bezier(.5,1.6,.5,1);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+  }
+  .d3-group-card-btn:hover { transform: translateY(-3px) scale(1.04); }
+  .d3-group-card-deco {
+    position: relative;
+    z-index: 2;
+    font-family: 'Caveat', cursive;
+    font-size: 96px;
+    text-align: right;
+    opacity: 0.55;
+    color: var(--gold);
+    line-height: 0.85;
+    transform: rotate(8deg);
+  }
+  @media (max-width: 900px) {
+    .d3-group-card { padding: 32px 28px; grid-template-columns: 1fr; gap: 16px; transform: rotate(0); }
+    .d3-group-card-text { font-size: 19px; }
+    .d3-group-card-deco { font-size: 56px; text-align: center; transform: rotate(0); opacity: 0.4; }
+  }
+  @media (max-width: 480px) {
+    .d3-group-card-eyebrow { font-size: 30px; }
+    .d3-group-card-deco { display: none; }
+  }
+
+  /* ─────────────── MOBILE WHATSAPP FAB ─────────────── */
+  .d3-fab {
+    position: fixed;
+    bottom: 18px; right: 18px;
+    width: 56px; height: 56px;
+    background: var(--terracotta);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    color: white;
+    z-index: 200;
+    box-shadow: 0 10px 28px rgba(212,89,58,0.45), 0 4px 10px rgba(74,30,58,0.18);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.6) translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s cubic-bezier(.5,1.6,.5,1);
+    text-decoration: none;
+  }
+  .d3-fab.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1) translateY(0);
+  }
+  .d3-fab:hover { transform: scale(1.07) translateY(-2px); }
+  .d3-fab svg { width: 28px; height: 28px; fill: currentColor; }
+  @media (min-width: 768px) { .d3-fab { display: none; } }
+
+  /* ─────────────── MOBILE TUNING FOR NEW ENHANCEMENTS ─────────────── */
+
+  @media (max-width: 900px) {
+    /* Photo collage ABOVE text on mobile so visitors see imagery first */
+    .d3-hero-grid { gap: 32px; }
+    .d3-hero-visual { order: -1; }
+    /* Override the unconditional desktop 110/128px h1 from the enhancement block */
+    .d3-h1 { font-size: 56px; }
+    .d3-h1 .d3-h1-script { font-size: 1em; }
+
+    /* Smaller stamp tucked into corner */
+    .d3-stamp-wrap { width: 92px; height: 92px; top: -8px; right: 4px; }
+    .d3-stamp-center span { font-size: 22px; }
+    .d3-stamp-center small { font-size: 8px; }
+    .d3-stamp-disk text { font-size: 10px; letter-spacing: 3px; }
+
+    /* Stickers shrink + reposition */
+    .d3-sticker { font-size: 10px; padding: 7px 12px; box-shadow: 3px 3px 0 var(--ink); }
+    .d3-sticker.s1 { top: 6%; left: 0; }
+    .d3-sticker.s2 { bottom: 8%; right: 0; }
+
+    /* Giant outline numbers behind cards: smaller proportional size */
+    .d3-svc-card::before { font-size: 130px; top: -28px; right: -6px; }
+    .d3-svc-price { font-size: 30px; }
+    .d3-svc-card.wide .d3-svc-price { font-size: 38px; }
+
+    /* Hero stats: compact font sizes so 3-up fits on 360-414px screens */
+    .d3-hero-side-meta { gap: 16px; padding-top: 20px; margin-top: 32px; }
+    .d3-stat-num { font-size: 22px; }
+    .d3-stat-label { font-size: 10px; }
+
+    /* Marquee items smaller on mobile */
+    .d3-marquee-item { font-size: 18px; gap: 32px; }
+    .d3-marquee.reverse .d3-marquee-item { font-size: 12px; letter-spacing: 0.14em; }
+
+    /* Hero handwritten scribbles smaller so they don't overlap */
+    .d3-handwritten { font-size: 18px; }
+    .d3-handwritten.h1 { top: -2px; left: 50%; }
+    .d3-handwritten.h2 { bottom: 35%; left: -2%; }
+
+    /* Decorative leaves smaller */
+    .d3-leaf { font-size: 50px; }
+
+    /* Section padding tighter */
+    .d3-services, .d3-about, .d3-how, .d3-faq, .d3-cta { padding-top: 70px; padding-bottom: 70px; }
+
+    /* CTA */
+    .d3-cta-deco { font-size: 18px; letter-spacing: 0.6em; }
+    .d3-cta-btn { padding: 18px 28px; font-size: 16px; }
+
+    /* About title */
+    .d3-since { font-size: 10px; padding: 6px 12px; letter-spacing: 0.14em; }
+
+    /* H1 underline scale */
+    .d3-h1-underline { bottom: -14px; height: 18px; }
+    .d3-h1-underline path { stroke-width: 4; }
+  }
+
+  @media (max-width: 560px) {
+    /* Hero h1 sized for narrow phones */
+    .d3-h1 { font-size: 44px; }
+    .d3-h1 .d3-h1-script { font-size: 0.92em; }
+
+    /* Stamp even smaller, hide stickers to keep hero clean */
+    .d3-stamp-wrap { width: 76px; height: 76px; top: -4px; right: 4px; }
+    .d3-stamp-center span { font-size: 18px; }
+    .d3-stamp-center small { font-size: 7px; margin-top: 2px; }
+    .d3-stamp-disk text { font-size: 9px; letter-spacing: 2px; }
+
+    .d3-sticker.s2 { display: none; } /* keep just one sticker for breathing room */
+
+    /* Card outline number smaller still */
+    .d3-svc-card::before { font-size: 110px; top: -20px; }
+
+    /* Hero stats: 3-col fits on smallest screens with 18px num */
+    .d3-stat-num { font-size: 18px; }
+    .d3-hero-side-meta { gap: 12px; }
+
+    /* Decor flowers fewer */
+    .d3-hero-decor.dec-2, .d3-hero-decor.dec-3 { display: none; }
+
+    /* Hero leaves quieter */
+    .d3-leaf.l1 { font-size: 36px; }
+    .d3-leaf.l2 { font-size: 36px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="d3-root">
+
+  <!-- NAV -->
+  <nav class="d3-nav">
+    <div class="d3-logo">
+      <div class="d3-logo-mark"></div>
+      <div class="d3-logo-text">
+        <strong>Laura Nails</strong>
+        <small data-i18n="brand.tagline">Medellín, Colombia</small>
+      </div>
+    </div>
+    <div class="d3-nav-links">
+      <a href="#services" data-i18n="nav.services">Servicios</a>
+      <a href="#about" data-i18n="nav.about">Sobre mí</a>
+      <a href="#how" data-i18n="nav.how">Cómo funciona</a>
+      <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+      <div class="d3-lang-toggle" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="es" data-i18n-aria="lang.es-aria" aria-pressed="true">ES</button>
+        <button type="button" class="lang-btn" data-lang="en" data-i18n-aria="lang.en-aria" aria-pressed="false">EN</button>
+      </div>
+      <a href="#" class="d3-nav-cta" data-wa target="_blank" rel="noopener noreferrer"><span data-i18n="nav.book">Escribime</span> →</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="d3-hero">
+    <div class="d3-sunset" aria-hidden="true"></div>
+    <div class="d3-hero-grid">
+      <div>
+        <div class="d3-eyebrow" data-i18n="hero.eyebrow">Manicure y Pedicure a Domicilio · Medellín</div>
+        <h1 class="d3-display d3-h1">
+          <span data-i18n="hero.title">Uñas bonitas,</span><br/>
+          <span class="d3-h1-script">
+            <span data-i18n="hero.title-accent">donde vos estés</span>
+            <svg class="d3-h1-underline" viewBox="0 0 600 26" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M 6 18 C 80 8, 180 22, 280 14 C 380 6, 480 22, 594 12" />
+            </svg>
+          </span>
+        </h1>
+        <p class="d3-sub" data-i18n="hero.sub">¡Hola! Soy Laura, paisa de toda la vida. Voy a tu hotel, Airbnb o apartamento para que te relajés tranqui y salgás de Medellín con las uñas hermosas.</p>
+        <div class="d3-cta-row">
+          <a href="#" class="d3-btn-primary" data-wa target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2C17.5 21.8 22 17.3 22 11.8 22 6.3 17.5 2 12 2z"/></svg>
+            <span data-i18n="hero.cta">Escribime por WhatsApp</span>
+          </a>
+          <a href="#services" class="d3-btn-secondary"><span data-i18n="hero.cta2">Ver servicios</span> →</a>
+        </div>
+        <div class="d3-hero-side-meta">
+          <div>
+            <div class="d3-stat-num d3-display">100%</div>
+            <div class="d3-stat-label" data-i18n="hero.stat-1-l">a domicilio</div>
+          </div>
+          <div>
+            <div class="d3-stat-num d3-display">45-75 min</div>
+            <div class="d3-stat-label" data-i18n="hero.stat-2-l">por servicio</div>
+          </div>
+          <div>
+            <div class="d3-stat-num d3-display">ES + EN</div>
+            <div class="d3-stat-label" data-i18n="hero.stat-3-l">con ayudita de Translate</div>
+          </div>
+        </div>
+      </div>
+      <div class="d3-hero-visual">
+        <span class="d3-hero-decor dec-1" aria-hidden="true">✿</span>
+        <span class="d3-hero-decor dec-2" aria-hidden="true">✦</span>
+        <span class="d3-hero-decor dec-3" aria-hidden="true">✿</span>
+        <div class="d3-handwritten h1" data-i18n="hero.scribble-1">uñas frescas</div>
+        <div class="d3-photo-card p1">
+          <div class="d3-tape t1" aria-hidden="true"></div>
+          <img src="laura-nails.webp" data-i18n-alt="hero.alt-nails" alt="Laura mostrando sus uñas" loading="eager" decoding="async" fetchpriority="high" />
+        </div>
+        <div class="d3-photo-card p2">
+          <img src="laura-nails.webp" data-i18n-alt="hero.alt-detail" alt="Detalle de uñas pintadas a mano" loading="eager" decoding="async" />
+        </div>
+        <div class="d3-photo-card p3">
+          <div class="d3-tape t2" aria-hidden="true"></div>
+          <img src="img1.webp" data-i18n-alt="hero.alt-art" alt="Diseños de nail art a mano" loading="eager" decoding="async" />
+        </div>
+        <div class="d3-leaf l1" aria-hidden="true">🌿</div>
+        <div class="d3-leaf l2" aria-hidden="true">🌺</div>
+        <div class="d3-handwritten h2" data-i18n="hero.scribble-2">¡a tu casa!</div>
+
+        <span class="d3-sticker s1" data-i18n="hero.sticker-1">★ Hecho en Medellín</span>
+        <span class="d3-sticker s2" data-i18n="hero.sticker-2">100% a domicilio</span>
+
+        <div class="d3-stamp-wrap" aria-hidden="true">
+          <div class="d3-stamp-disk">
+            <svg viewBox="0 0 150 150">
+              <defs>
+                <path id="d3-stamp-path" d="M 75 75 m -56 0 a 56 56 0 1 1 112 0 a 56 56 0 1 1 -112 0"/>
+              </defs>
+              <text>
+                <textPath href="#d3-stamp-path" startOffset="0">· LAURA NAILS · MEDELLÍN · A DOMICILIO ·</textPath>
+              </text>
+            </svg>
+          </div>
+          <div class="d3-stamp-center">
+            <div>
+              <span data-i18n="hero.stamp-word">tranqui</span>
+              <small data-i18n="hero.stamp-tag">EST · 2024</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE (forward) -->
+  <div class="d3-marquee" aria-hidden="true">
+    <div class="d3-marquee-track">
+      <span class="d3-marquee-item">manicure</span>
+      <span class="d3-marquee-item">pedicure</span>
+      <span class="d3-marquee-item">gel</span>
+      <span class="d3-marquee-item">a domicilio</span>
+      <span class="d3-marquee-item">Poblado</span>
+      <span class="d3-marquee-item">Laureles</span>
+      <span class="d3-marquee-item">Envigado</span>
+      <span class="d3-marquee-item">Medellín</span>
+      <span class="d3-marquee-item">manicure</span>
+      <span class="d3-marquee-item">pedicure</span>
+      <span class="d3-marquee-item">gel</span>
+      <span class="d3-marquee-item">a domicilio</span>
+      <span class="d3-marquee-item">Poblado</span>
+      <span class="d3-marquee-item">Laureles</span>
+      <span class="d3-marquee-item">Envigado</span>
+      <span class="d3-marquee-item">Medellín</span>
+    </div>
+  </div>
+
+  <!-- MARQUEE (counter-flow) -->
+  <div class="d3-marquee reverse" aria-hidden="true">
+    <div class="d3-marquee-track">
+      <span class="d3-marquee-item">tranqui</span>
+      <span class="d3-marquee-item">sin afanes</span>
+      <span class="d3-marquee-item">a tu ritmo</span>
+      <span class="d3-marquee-item">en tu casa</span>
+      <span class="d3-marquee-item">tranqui</span>
+      <span class="d3-marquee-item">sin afanes</span>
+      <span class="d3-marquee-item">a tu ritmo</span>
+      <span class="d3-marquee-item">en tu casa</span>
+      <span class="d3-marquee-item">tranqui</span>
+      <span class="d3-marquee-item">sin afanes</span>
+      <span class="d3-marquee-item">a tu ritmo</span>
+      <span class="d3-marquee-item">en tu casa</span>
+      <span class="d3-marquee-item">tranqui</span>
+      <span class="d3-marquee-item">sin afanes</span>
+      <span class="d3-marquee-item">a tu ritmo</span>
+      <span class="d3-marquee-item">en tu casa</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="d3-services">
+    <div class="d3-section-head">
+      <div class="d3-section-eyebrow reveal">~ <span data-i18n="services.eyebrow">Lo que hago</span> ~</div>
+      <h2 class="d3-display d3-section-title reveal delay-1">
+        <span data-i18n="services.title">Manicure, pedicure,</span>
+        <em data-i18n="services.title-accent">o las dos</em>
+      </h2>
+      <p class="d3-section-sub reveal delay-2" data-i18n="services.sub">El desplazamiento corre por mi cuenta dentro de Poblado, Laureles y Envigado. Llevo todo lo que necesitamos y nos tomamos el tiempo. Sin afanes.</p>
+    </div>
+    <div class="d3-svc-grid">
+
+      <article class="d3-svc-card reveal delay-1" data-num="01">
+        <span class="d3-svc-tag" data-i18n="svc-1.tag">Clásico</span>
+        <div class="d3-svc-name" data-i18n="svc-1.name">Manicure Clásico</div>
+        <div class="d3-svc-desc" data-i18n="svc-1.desc">Limado, cutículas, masajito en las manos y el color que más te guste. Clásico por algo.</div>
+        <div class="d3-svc-bottom">
+          <div>
+            <span class="d3-svc-price" data-i18n="svc-1.price">$45.000</span>
+            <span class="d3-svc-currency">COP</span>
+          </div>
+          <div class="d3-svc-time">⏱ <span data-i18n="svc-1.time">45 min</span></div>
+        </div>
+        <a href="#" class="d3-svc-book" data-wa data-wa-text-key="svc-1.prefill" target="_blank" rel="noopener noreferrer"><span data-i18n="services.book">Reservar</span> →</a>
+      </article>
+
+      <article class="d3-svc-card feat reveal delay-2" data-num="02">
+        <span class="d3-svc-tag" data-i18n="svc-2.tag">Top</span>
+        <div class="d3-svc-name" data-i18n="svc-2.name">Manicure en Gel</div>
+        <div class="d3-svc-desc" data-i18n="svc-2.desc">Esmalte en gel que dura entre dos y tres semanas sin saltarse. La misma atención del clásico, con brillo que se queda.</div>
+        <div class="d3-svc-bottom">
+          <div>
+            <span class="d3-svc-price" data-i18n="svc-2.price">$65.000</span>
+            <span class="d3-svc-currency">COP</span>
+          </div>
+          <div class="d3-svc-time">⏱ <span data-i18n="svc-2.time">60 min</span></div>
+        </div>
+        <a href="#" class="d3-svc-book" data-wa data-wa-text-key="svc-2.prefill" target="_blank" rel="noopener noreferrer"><span data-i18n="services.book">Reservar</span> →</a>
+      </article>
+
+      <article class="d3-svc-card reveal delay-3" data-num="03">
+        <span class="d3-svc-tag" data-i18n="svc-3.tag">Deluxe</span>
+        <div class="d3-svc-name" data-i18n="svc-3.name">Pedicure Deluxe</div>
+        <div class="d3-svc-desc" data-i18n="svc-3.desc">Remojo, exfoliación, durezas, masaje rico y esmalte. Esta es la que la gente vuelve a pedir.</div>
+        <div class="d3-svc-bottom">
+          <div>
+            <span class="d3-svc-price" data-i18n="svc-3.price">$75.000</span>
+            <span class="d3-svc-currency">COP</span>
+          </div>
+          <div class="d3-svc-time">⏱ <span data-i18n="svc-3.time">75 min</span></div>
+        </div>
+        <a href="#" class="d3-svc-book" data-wa data-wa-text-key="svc-3.prefill" target="_blank" rel="noopener noreferrer"><span data-i18n="services.book">Reservar</span> →</a>
+      </article>
+
+      <article class="d3-svc-card feat-2 wide reveal delay-4" data-num="04">
+        <span class="d3-svc-tag" data-i18n="svc-4.tag">Más pedido</span>
+        <div class="d3-svc-name" data-i18n="svc-4.name">Combo Mani + Pedi</div>
+        <div class="d3-svc-desc" data-i18n="svc-4.desc">Manicure y pedicure completos. Ahorrás $10,000 COP.</div>
+        <div class="d3-svc-bottom">
+          <div>
+            <span class="d3-svc-price" data-i18n="svc-4.price">$110.000</span>
+            <span class="d3-svc-currency">COP</span>
+          </div>
+          <div class="d3-svc-time">⏱ <span data-i18n="svc-4.time">2 horas</span></div>
+        </div>
+        <a href="#" class="d3-svc-book" data-wa data-wa-text-key="svc-4.prefill" target="_blank" rel="noopener noreferrer"><span data-i18n="services.book">Reservar</span> →</a>
+      </article>
+
+    </div>
+
+    <!-- ADD-ONS: extras that can be added to any service -->
+    <div class="d3-svc-addons reveal">
+      <div>
+        <div class="d3-svc-addons-title" data-i18n="addons.title">Sumale extras</div>
+        <span class="d3-svc-addons-intro" data-i18n="addons.intro">Agregalos a cualquier servicio.</span>
+      </div>
+      <ul class="d3-svc-addons-list">
+        <li data-i18n="addons.1">Decoración (por uña)</li>
+        <li data-i18n="addons.2">Puntas francesas</li>
+        <li data-i18n="addons.3">Retiro de gel</li>
+        <li data-i18n="addons.4">Tiempo extra de masaje (15 min)</li>
+      </ul>
+    </div>
+
+    <!-- PRICING NOTES: payment, travel, USD conversion -->
+    <div class="d3-pricing-notes reveal">
+      <div class="d3-note">
+        <div class="d3-note-label" data-i18n="pricing.note-pago-label">Pago</div>
+        <div class="d3-note-value" data-i18n="pricing.note-pago-value">Efectivo en pesos, Nequi, Daviplata o Wise (USD).</div>
+      </div>
+      <div class="d3-note">
+        <div class="d3-note-label" data-i18n="pricing.note-travel-label">Desplazamiento</div>
+        <div class="d3-note-value" data-i18n="pricing.note-travel-value">Incluido en Poblado, Laureles y Envigado. Otros barrios, una platica pequeña.</div>
+      </div>
+      <div class="d3-note">
+        <div class="d3-note-label" data-i18n="pricing.note-usd-label">Conversión USD</div>
+        <div class="d3-note-value" data-i18n="pricing.note-usd-value">Aproximada a 4,000 COP por USD. La tasa al pagar puede variar.</div>
+      </div>
+    </div>
+
+    <!-- GROUP RATE CTA: bachelorettes, friends visiting -->
+    <div class="d3-group-card reveal">
+      <div class="d3-group-card-content">
+        <div class="d3-group-card-eyebrow" data-i18n="group.eyebrow">¿En grupo?</div>
+        <p class="d3-group-card-text" data-i18n="group.text">¿Vienen varias? Te armo un plan personalizado para el grupo.</p>
+        <a href="#" class="d3-group-card-btn" data-wa data-wa-text-key="group.prefill" target="_blank" rel="noopener noreferrer">
+          <span data-i18n="group.cta">Pedir tarifa de grupo</span> →
+        </a>
+      </div>
+      <div class="d3-group-card-deco" aria-hidden="true">✿✿✿</div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="d3-about">
+    <div class="d3-about-grid">
+      <div class="d3-about-photo-wrap reveal">
+        <div class="d3-about-photo">
+          <img src="laura-abtme.webp" data-i18n-alt="about.alt" alt="Laura en su estudio en Medellín" loading="lazy" decoding="async" />
+        </div>
+        <div class="d3-about-quote" data-i18n="about.quote">¡me encanta lo que hago! ✿</div>
+      </div>
+      <div>
+        <div class="d3-about-eyebrow reveal">~ <span data-i18n="about.eyebrow">Conocé a Laura</span> ~</div>
+        <h2 class="d3-display d3-about-title reveal delay-1">
+          <span data-i18n="about.title">Hola, soy</span>
+          <em data-i18n="about.title-accent">Laura</em>
+        </h2>
+        <p class="d3-about-text" data-i18n="about.p1">Soy Laura. Paisa, nacida y criada en Medellín, nunca he vivido en otro lado. Aprendí a hacer uñas acá en la ciudad y llevo dos años haciéndoselas a mis amigas, mis vecinas y a mi mamá. Ahora también se las hago a la gente que viene a visitar.</p>
+        <p class="d3-about-text" data-i18n="about.p2">Sé cómo es cuando uno está de viaje. Lo último que querés es buscar un salón o pelearte con el español para pedir lo que querés. Por eso te lo llevo todo a tu lugar. Instrumentos, esmaltes, lámpara de gel, toallas. Vos te sentás y escogés el color.</p>
+        <div class="d3-about-chips">
+          <span class="d3-about-chip" data-i18n="about.chip-1">Capacitada en serio</span>
+          <span class="d3-about-chip" data-i18n="about.chip-2">Instrumentos limpios, siempre</span>
+          <span class="d3-about-chip" data-i18n="about.chip-3">Esmaltes que me encantan</span>
+          <span class="d3-about-chip" data-i18n="about.chip-4">Horarios flexibles</span>
+        </div>
+        <div class="d3-since" data-i18n="about.since">★ Paisa · 2 años haciendo uñas ★</div>
+        <div class="d3-about-sig" data-i18n="about.sig">Laura ✿</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section id="how" class="d3-how">
+    <div class="d3-section-head">
+      <div class="d3-section-eyebrow reveal">~ <span data-i18n="how.eyebrow">Cómo funciona</span> ~</div>
+      <h2 class="d3-display d3-section-title reveal delay-1" data-i18n="how.title">Tres pasos fáciles</h2>
+      <p class="d3-section-sub reveal delay-2" data-i18n="how.sub">Ningún afán. Cero filas.</p>
+    </div>
+    <div class="d3-steps">
+      <div class="d3-step reveal delay-1">
+        <div class="d3-step-num">01</div>
+        <div class="d3-step-t" data-i18n="how.s1-t">Escribime</div>
+        <div class="d3-step-d" data-i18n="how.s1-d">Contame dónde te estás quedando y a qué hora querés vernos. Suelo responder en pocos minutos.</div>
+        <svg class="d3-step-curve" viewBox="0 0 80 70" aria-hidden="true">
+          <path d="M 4 35 C 22 8, 56 62, 70 35" />
+          <polygon class="arrow" points="66,30 74,35 66,40" />
+        </svg>
+      </div>
+      <div class="d3-step reveal delay-2">
+        <div class="d3-step-num">02</div>
+        <div class="d3-step-t" data-i18n="how.s2-t">Voy a vos</div>
+        <div class="d3-step-d" data-i18n="how.s2-d">Llego con todo. Lámpara, esmaltes, toallas, instrumentos. Vos no tenés que preparar nada.</div>
+        <svg class="d3-step-curve" viewBox="0 0 80 70" aria-hidden="true">
+          <path d="M 4 35 C 22 62, 56 8, 70 35" />
+          <polygon class="arrow" points="66,30 74,35 66,40" />
+        </svg>
+      </div>
+      <div class="d3-step reveal delay-3">
+        <div class="d3-step-num">03</div>
+        <div class="d3-step-t" data-i18n="how.s3-t">Listo, uñas divinas</div>
+        <div class="d3-step-d" data-i18n="how.s3-d">Uñas bonitas y una tarde tranqui. Después te escribo para asegurarme de que quedaste feliz.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="d3-faq">
+    <div class="d3-section-head">
+      <div class="d3-section-eyebrow reveal">~ <span data-i18n="faq.eyebrow">Preguntas frecuentes</span> ~</div>
+      <h2 class="d3-display d3-section-title reveal delay-1" data-i18n="faq.title">Lo que la gente me pregunta</h2>
+    </div>
+    <div class="d3-faq-list">
+      <div class="d3-faq-item reveal">
+        <div class="d3-faq-q"><span data-i18n="faq.q1">¿Con cuánto tiempo de anticipación reservo?</span> <span class="d3-faq-q-icon">+</span></div>
+        <div class="d3-faq-a"><p data-i18n="faq.a1">Las tardes entre semana suelen estar tranquilas, muchas veces te puedo atender el mismo día o el día anterior. Los fines de semana y los domingos antes de un vuelo se llenan rápido, así que para esos cupos mejor reservá con 2 o 3 días.</p></div>
+      </div>
+      <div class="d3-faq-item reveal">
+        <div class="d3-faq-q"><span data-i18n="faq.q2">¿Es seguro que alguien venga a mi Airbnb?</span> <span class="d3-faq-q-icon">+</span></div>
+        <div class="d3-faq-a"><p data-i18n="faq.a2">Te entiendo perfecto, es una pregunta justa. Si querés, te mando una foto de mi cédula antes de ir, o nos vemos en la portería y subimos juntas. Los anfitriones y porteros acá ya están acostumbrados. En Medellín es supercomún que alguien venga a la casa para servicios de belleza.</p></div>
+      </div>
+      <div class="d3-faq-item reveal">
+        <div class="d3-faq-q"><span data-i18n="faq.q3">¿Qué idiomas hablás?</span> <span class="d3-faq-q-icon">+</span></div>
+        <div class="d3-faq-a"><p data-i18n="faq.a3">El español es mi idioma de siempre. El inglés lo estoy aprendiendo (despacito pero con ganas), así que para los detalles, Google Translate y yo somos un buen equipo. Escribime tranqui en el idioma que más fácil te quede, nos entendemos.</p></div>
+      </div>
+      <div class="d3-faq-item reveal">
+        <div class="d3-faq-q"><span data-i18n="faq.q4">¿Hacés decoración de uñas o solo esmalte básico?</span> <span class="d3-faq-q-icon">+</span></div>
+        <div class="d3-faq-a"><p data-i18n="faq.a4">Cosas sencillas como puntas francesas, una uña de acento o líneas básicas, sí, todo bien. Para algo muy elaborado (3D, arte superdetallado), te digo de frente y te recomiendo a una amiga que se dedica a eso.</p></div>
+      </div>
+      <div class="d3-faq-item reveal">
+        <div class="d3-faq-q"><span data-i18n="faq.q5">¿Cómo te pago?</span> <span class="d3-faq-q-icon">+</span></div>
+        <div class="d3-faq-a"><p data-i18n="faq.a5">Lo más fácil es efectivo en pesos. También recibo Nequi, Daviplata y transferencias internacionales por Wise. Todavía no tengo datáfono, ¡disculpame!</p></div>
+      </div>
+      <div class="d3-faq-item reveal">
+        <div class="d3-faq-q"><span data-i18n="faq.q6">¿Puedo reservar para un grupo? (despedida, amigas de visita)</span> <span class="d3-faq-q-icon">+</span></div>
+        <div class="d3-faq-a"><p data-i18n="faq.a6">¡Claro que sí, me encantan! Puedo atender hasta 3 o 4 personas seguidas en el mismo lugar. Decime cuántas son y a qué hora, y armo un plan para el grupo.</p></div>
+      </div>
+      <div class="d3-faq-item reveal">
+        <div class="d3-faq-q"><span data-i18n="faq.q7">¿Qué pasa si se me salta el esmalte después?</span> <span class="d3-faq-q-icon">+</span></div>
+        <div class="d3-faq-a"><p data-i18n="faq.a7">Si el manicure en gel se te salta dentro de los primeros 5 días, mandame una foto y voy a arreglártelo sin costo. El esmalte normal no tiene la misma garantía porque no está hecho para durar tanto, pero siempre te digo de frente cuál te sirve mejor para la semana que tenés planeada.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="d3-cta">
+    <div class="d3-cta-inner">
+      <div class="d3-cta-deco" aria-hidden="true">✿ ✦ ✿</div>
+      <div class="d3-cta-eyebrow reveal">~ <span data-i18n="cta.eyebrow">¿Listas?</span> ~</div>
+      <h2 class="d3-display d3-cta-title reveal delay-1">
+        <span data-i18n="cta.title">Tus uñas</span>
+        <em data-i18n="cta.title-accent">te esperan</em>
+      </h2>
+      <p class="d3-cta-sub" data-i18n="cta.sub">Mandame un WhatsApp y buscamos un momento que te quede bien. Suelo responder en menos de 15 minutos.</p>
+      <a href="#" class="d3-cta-btn" data-wa target="_blank" rel="noopener noreferrer">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2C17.5 21.8 22 17.3 22 11.8 22 6.3 17.5 2 12 2z"/></svg>
+        <span data-i18n="cta.btn">Escribime por WhatsApp</span>
+      </a>
+      <div class="d3-cta-meta">
+        <span>🕒 <span data-i18n="cta.hours">Suelo responder en menos de 15 minutos</span></span>
+        <span>📍 <span data-i18n="cta.area">Poblado, Laureles y Envigado</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="d3-footer">
+    <div class="d3-footer-logo">Laura Nails</div>
+    <div class="d3-footer-sub">
+      <span data-i18n="footer.tagline">Manicure y Pedicure a Domicilio en Medellín</span>
+      ·
+      <span data-i18n="footer.rights">Laura Nails · Medellín, Colombia</span>
+      ·
+      © 2026
+    </div>
+  </footer>
+
+</div>
+
+<!-- Mobile sticky WhatsApp FAB -->
+<a id="wa-fab" class="d3-fab" data-wa target="_blank" rel="noopener noreferrer" data-i18n-aria="fab.aria" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2C17.5 21.8 22 17.3 22 11.8 22 6.3 17.5 2 12 2z"/></svg>
+</a>
+
+<script>
+(function () {
+  'use strict';
+
+  var WA_URL = 'https://wa.me/573006159715';
+
+  var I18N = {
+    es: {
+      'meta.title': 'Laura Nails · Manicure y Pedicure a Domicilio en Medellín',
+      'meta.description': '¡Hola! Soy Laura. Hago manicure y pedicure en tu hotel, Airbnb o apartamento en Medellín. Escribime por WhatsApp.',
+      'lang.es-aria': 'Cambiar a español',
+      'lang.en-aria': 'Cambiar a inglés',
+
+      'brand.tagline': 'Medellín, Colombia',
+
+      'nav.services': 'Servicios',
+      'nav.about': 'Sobre mí',
+      'nav.how': 'Cómo funciona',
+      'nav.faq': 'Preguntas',
+      'nav.book': 'Escribime',
+
+      'hero.eyebrow': 'Manicure y Pedicure a Domicilio · Medellín',
+      'hero.title': 'Uñas bonitas,',
+      'hero.title-accent': 'donde vos estés',
+      'hero.sub': '¡Hola! Soy Laura, paisa de toda la vida. Voy a tu hotel, Airbnb o apartamento para que te relajés tranqui y salgás de Medellín con las uñas hermosas.',
+      'hero.cta': 'Escribime por WhatsApp',
+      'hero.cta2': 'Ver servicios',
+      'hero.scribble-1': 'uñas frescas',
+      'hero.scribble-2': '¡a tu casa!',
+      'hero.alt-nails': 'Laura mostrando sus uñas',
+      'hero.alt-detail': 'Detalle de uñas pintadas a mano',
+      'hero.alt-art': 'Diseños de nail art a mano',
+      'hero.stat-1-l': 'a domicilio',
+      'hero.stat-2-l': 'por servicio',
+      'hero.stat-3-l': 'con ayudita de Translate',
+      'hero.sticker-1': '★ Hecho en Medellín',
+      'hero.sticker-2': '100% a domicilio',
+      'hero.stamp-word': 'tranqui',
+      'hero.stamp-tag': 'EST · 2024',
+
+      'services.eyebrow': 'Lo que hago',
+      'services.title': 'Manicure, pedicure,',
+      'services.title-accent': 'o las dos',
+      'services.sub': 'El desplazamiento corre por mi cuenta dentro de Poblado, Laureles y Envigado. Llevo todo lo que necesitamos y nos tomamos el tiempo. Sin afanes.',
+      'services.book': 'Reservar',
+
+      'addons.title': 'Sumale extras',
+      'addons.intro': 'Agregalos a cualquier servicio.',
+      'addons.1': 'Decoración (por uña)',
+      'addons.2': 'Puntas francesas',
+      'addons.3': 'Retiro de gel',
+      'addons.4': 'Tiempo extra de masaje (15 min)',
+
+      'pricing.note-pago-label': 'Pago',
+      'pricing.note-pago-value': 'Efectivo en pesos, Nequi, Daviplata o Wise (USD).',
+      'pricing.note-travel-label': 'Desplazamiento',
+      'pricing.note-travel-value': 'Incluido en Poblado, Laureles y Envigado. Otros barrios, una platica pequeña.',
+      'pricing.note-usd-label': 'Conversión USD',
+      'pricing.note-usd-value': 'Aproximada a 4,000 COP por USD. La tasa al pagar puede variar.',
+
+      'group.eyebrow': '¿En grupo?',
+      'group.text': '¿Vienen varias? Te armo un plan personalizado para el grupo.',
+      'group.cta': 'Pedir tarifa de grupo',
+      'group.prefill': '¡Hola Laura! Vamos varias y queremos saber tarifas de grupo.',
+
+      'fab.aria': 'Escribir por WhatsApp',
+
+      'svc-1.tag': 'Clásico',
+      'svc-1.name': 'Manicure Clásico',
+      'svc-1.desc': 'Limado, cutículas, masajito en las manos y el color que más te guste. Clásico por algo.',
+      'svc-1.time': '45 min',
+      'svc-1.price': '$45.000',
+      'svc-1.prefill': '¡Hola Laura! Me gustaría reservar un Manicure Clásico ($45,000 COP).',
+
+      'svc-2.tag': 'Top',
+      'svc-2.name': 'Manicure en Gel',
+      'svc-2.desc': 'Esmalte en gel que dura entre dos y tres semanas sin saltarse. La misma atención del clásico, con brillo que se queda.',
+      'svc-2.time': '60 min',
+      'svc-2.price': '$65.000',
+      'svc-2.prefill': '¡Hola Laura! Me gustaría reservar un Manicure en Gel ($65,000 COP).',
+
+      'svc-3.tag': 'Deluxe',
+      'svc-3.name': 'Pedicure Deluxe',
+      'svc-3.desc': 'Remojo, exfoliación, durezas, masaje rico y esmalte. Esta es la que la gente vuelve a pedir.',
+      'svc-3.time': '75 min',
+      'svc-3.price': '$75.000',
+      'svc-3.prefill': '¡Hola Laura! Me gustaría reservar un Pedicure Deluxe ($75,000 COP).',
+
+      'svc-4.tag': 'Más pedido',
+      'svc-4.name': 'Combo Mani + Pedi',
+      'svc-4.desc': 'Manicure y pedicure completos. Ahorrás $10,000 COP.',
+      'svc-4.time': '2 horas',
+      'svc-4.price': '$110.000',
+      'svc-4.prefill': '¡Hola Laura! Me gustaría reservar el Combo Mani + Pedi ($110,000 COP).',
+
+      'about.eyebrow': 'Conocé a Laura',
+      'about.title': 'Hola, soy',
+      'about.title-accent': 'Laura',
+      'about.p1': 'Soy Laura. Paisa, nacida y criada en Medellín, nunca he vivido en otro lado. Aprendí a hacer uñas acá en la ciudad y llevo dos años haciéndoselas a mis amigas, mis vecinas y a mi mamá. Ahora también se las hago a la gente que viene a visitar.',
+      'about.p2': 'Sé cómo es cuando uno está de viaje. Lo último que querés es buscar un salón o pelearte con el español para pedir lo que querés. Por eso te lo llevo todo a tu lugar. Instrumentos, esmaltes, lámpara de gel, toallas. Vos te sentás y escogés el color.',
+      'about.chip-1': 'Capacitada en serio',
+      'about.chip-2': 'Instrumentos limpios, siempre',
+      'about.chip-3': 'Esmaltes que me encantan',
+      'about.chip-4': 'Horarios flexibles',
+      'about.sig': 'Laura ✿',
+      'about.since': '★ Paisa · 2 años haciendo uñas ★',
+      'about.quote': '¡me encanta lo que hago! ✿',
+      'about.alt': 'Laura en su estudio en Medellín',
+
+      'how.eyebrow': 'Cómo funciona',
+      'how.title': 'Tres pasos fáciles',
+      'how.sub': 'Ningún afán. Cero filas.',
+      'how.s1-t': 'Escribime',
+      'how.s1-d': 'Contame dónde te estás quedando y a qué hora querés vernos. Suelo responder en pocos minutos.',
+      'how.s2-t': 'Voy a vos',
+      'how.s2-d': 'Llego con todo. Lámpara, esmaltes, toallas, instrumentos. Vos no tenés que preparar nada.',
+      'how.s3-t': 'Listo, uñas divinas',
+      'how.s3-d': 'Uñas bonitas y una tarde tranqui. Después te escribo para asegurarme de que quedaste feliz.',
+
+      'faq.eyebrow': 'Preguntas frecuentes',
+      'faq.title': 'Lo que la gente me pregunta',
+      'faq.q1': '¿Con cuánto tiempo de anticipación reservo?',
+      'faq.a1': 'Las tardes entre semana suelen estar tranquilas, muchas veces te puedo atender el mismo día o el día anterior. Los fines de semana y los domingos antes de un vuelo se llenan rápido, así que para esos cupos mejor reservá con 2 o 3 días.',
+      'faq.q2': '¿Es seguro que alguien venga a mi Airbnb?',
+      'faq.a2': 'Te entiendo perfecto, es una pregunta justa. Si querés, te mando una foto de mi cédula antes de ir, o nos vemos en la portería y subimos juntas. Los anfitriones y porteros acá ya están acostumbrados. En Medellín es supercomún que alguien venga a la casa para servicios de belleza.',
+      'faq.q3': '¿Qué idiomas hablás?',
+      'faq.a3': 'El español es mi idioma de siempre. El inglés lo estoy aprendiendo (despacito pero con ganas), así que para los detalles, Google Translate y yo somos un buen equipo. Escribime tranqui en el idioma que más fácil te quede, nos entendemos.',
+      'faq.q4': '¿Hacés decoración de uñas o solo esmalte básico?',
+      'faq.a4': 'Cosas sencillas como puntas francesas, una uña de acento o líneas básicas, sí, todo bien. Para algo muy elaborado (3D, arte superdetallado), te digo de frente y te recomiendo a una amiga que se dedica a eso.',
+      'faq.q5': '¿Cómo te pago?',
+      'faq.a5': 'Lo más fácil es efectivo en pesos. También recibo Nequi, Daviplata y transferencias internacionales por Wise. Todavía no tengo datáfono, ¡disculpame!',
+      'faq.q6': '¿Puedo reservar para un grupo? (despedida, amigas de visita)',
+      'faq.a6': '¡Claro que sí, me encantan! Puedo atender hasta 3 o 4 personas seguidas en el mismo lugar. Decime cuántas son y a qué hora, y armo un plan para el grupo.',
+      'faq.q7': '¿Qué pasa si se me salta el esmalte después?',
+      'faq.a7': 'Si el manicure en gel se te salta dentro de los primeros 5 días, mandame una foto y voy a arreglártelo sin costo. El esmalte normal no tiene la misma garantía porque no está hecho para durar tanto, pero siempre te digo de frente cuál te sirve mejor para la semana que tenés planeada.',
+
+      'cta.eyebrow': '¿Listas?',
+      'cta.title': 'Tus uñas',
+      'cta.title-accent': 'te esperan',
+      'cta.sub': 'Mandame un WhatsApp y buscamos un momento que te quede bien. Suelo responder en menos de 15 minutos.',
+      'cta.btn': 'Escribime por WhatsApp',
+      'cta.hours': 'Suelo responder en menos de 15 minutos',
+      'cta.area': 'Poblado, Laureles y Envigado',
+
+      'footer.tagline': 'Manicure y Pedicure a Domicilio en Medellín',
+      'footer.rights': 'Laura Nails · Medellín, Colombia',
+
+      'wa.default-text': '¡Hola Laura! Vi tu sitio web.'
+    },
+    en: {
+      'meta.title': 'Laura Nails · Mani & Pedi at Your Place in Medellín',
+      'meta.description': "Hola! I'm Laura. I do manicures and pedicures at your hotel, Airbnb, or apartment in Medellín. Message me on WhatsApp.",
+      'lang.es-aria': 'Switch to Spanish',
+      'lang.en-aria': 'Switch to English',
+
+      'brand.tagline': 'Medellín, Colombia',
+
+      'nav.services': 'Services',
+      'nav.about': 'About',
+      'nav.how': 'How it works',
+      'nav.faq': 'FAQ',
+      'nav.book': 'Message me',
+
+      'hero.eyebrow': 'Mani & Pedi at Your Place · Medellín',
+      'hero.title': 'Pretty nails,',
+      'hero.title-accent': 'right where you are',
+      'hero.sub': "Hola! I'm Laura, born and raised here. I come to your hotel, Airbnb, or apartment so you can sit back, relax, and still leave Medellín looking cute.",
+      'hero.cta': 'Message me on WhatsApp',
+      'hero.cta2': 'See services',
+      'hero.scribble-1': 'fresh nails',
+      'hero.scribble-2': 'to your home!',
+      'hero.alt-nails': 'Laura showing her nails',
+      'hero.alt-detail': 'Hand-painted nails detail',
+      'hero.alt-art': 'Hand-painted nail art designs',
+      'hero.stat-1-l': 'at-home',
+      'hero.stat-2-l': 'per service',
+      'hero.stat-3-l': 'with a little Translate help',
+      'hero.sticker-1': '★ Made in Medellín',
+      'hero.sticker-2': '100% at-home',
+      'hero.stamp-word': 'chill',
+      'hero.stamp-tag': 'EST · 2024',
+
+      'services.eyebrow': 'What I Do',
+      'services.title': 'Mani, pedi,',
+      'services.title-accent': 'or both',
+      'services.sub': 'Travel is on me inside Poblado, Laureles, and Envigado. I bring all my stuff and we take our time. No rushing.',
+      'services.book': 'Book',
+
+      'addons.title': 'Add extras',
+      'addons.intro': 'Add to any service.',
+      'addons.1': 'Nail Art (per nail)',
+      'addons.2': 'French Tips',
+      'addons.3': 'Gel Removal',
+      'addons.4': 'Extra Massage Time (15 min)',
+
+      'pricing.note-pago-label': 'Payment',
+      'pricing.note-pago-value': 'Cash in pesos, Nequi, Daviplata, or Wise (USD).',
+      'pricing.note-travel-label': 'Travel',
+      'pricing.note-travel-value': 'Included in Poblado, Laureles, and Envigado. Other areas, a small fee.',
+      'pricing.note-usd-label': 'USD conversion',
+      'pricing.note-usd-value': 'Approx. 4,000 COP per USD. Actual rate at payment may vary.',
+
+      'group.eyebrow': 'Coming with friends?',
+      'group.text': "Coming with a group? I'll put together a custom plan.",
+      'group.cta': 'Ask for group rates',
+      'group.prefill': "Hi Laura! We're a group and want to know about group rates.",
+
+      'fab.aria': 'Message me on WhatsApp',
+
+      'svc-1.tag': 'Classic',
+      'svc-1.name': 'Classic Manicure',
+      'svc-1.desc': 'Shaping, cuticles, a hand massage, and any color you want. Classic for a reason.',
+      'svc-1.time': '45 min',
+      'svc-1.price': '$45,000',
+      'svc-1.prefill': "Hi Laura! I'd like to book a Classic Manicure ($45,000 COP).",
+
+      'svc-2.tag': 'Top',
+      'svc-2.name': 'Gel Manicure',
+      'svc-2.desc': 'Gel that lasts two to three weeks without chipping. Same care as the classic, locked in shiny.',
+      'svc-2.time': '60 min',
+      'svc-2.price': '$65,000',
+      'svc-2.prefill': "Hi Laura! I'd like to book a Gel Manicure ($65,000 COP).",
+
+      'svc-3.tag': 'Deluxe',
+      'svc-3.name': 'Deluxe Pedicure',
+      'svc-3.desc': 'Soak, scrub, callus work, a real massage, polish. This is the one people book twice.',
+      'svc-3.time': '75 min',
+      'svc-3.price': '$75,000',
+      'svc-3.prefill': "Hi Laura! I'd like to book a Deluxe Pedicure ($75,000 COP).",
+
+      'svc-4.tag': 'Most popular',
+      'svc-4.name': 'Mani + Pedi Combo',
+      'svc-4.desc': 'Full manicure and pedicure. Save $10,000 COP.',
+      'svc-4.time': '2 hrs',
+      'svc-4.price': '$110,000',
+      'svc-4.prefill': "Hi Laura! I'd like to book the Mani + Pedi Combo ($110,000 COP).",
+
+      'about.eyebrow': 'Meet Laura',
+      'about.title': "Hi, I'm",
+      'about.title-accent': 'Laura',
+      'about.p1': "I'm Laura. Paisa, born and raised, never lived anywhere else. I studied nails here in Medellín and I've been doing them for friends, neighbors, and my mom for the past two years. Now I'm doing them for people visiting the city too.",
+      'about.p2': "I know how it goes when you're traveling. The last thing you want is to figure out where the salon is, or how to ask for what you want in español. So I bring everything to you. Tools, polishes, gel lamp, towels. You sit there and pick a color.",
+      'about.chip-1': 'Properly trained',
+      'about.chip-2': 'Clean tools, always',
+      'about.chip-3': 'Polishes I love',
+      'about.chip-4': 'Flexible hours',
+      'about.sig': 'Laura ✿',
+      'about.since': '★ Paisa · 2 years doing nails ★',
+      'about.quote': 'I love what I do! ✿',
+      'about.alt': 'Laura at her studio in Medellín',
+
+      'how.eyebrow': 'How It Works',
+      'how.title': 'Three Quick Steps',
+      'how.sub': 'No rush. No queues.',
+      'how.s1-t': 'Text Me',
+      'how.s1-d': "Tell me where you're staying and when you'd like to meet. I usually reply in a few minutes.",
+      'how.s2-t': 'I Come to You',
+      'how.s2-d': "I show up with everything. Lamp, polishes, towels, tools. You don't have to set up a thing.",
+      'how.s3-t': 'Pretty Nails, Done',
+      'how.s3-d': "Cute nails and a chill afternoon. I'll check in after to make sure you're loving them.",
+
+      'faq.eyebrow': 'Frequently Asked',
+      'faq.title': 'Things people actually ask',
+      'faq.q1': 'How far in advance should I book?',
+      'faq.a1': "Weekday afternoons are usually pretty open, often I can fit you in same-day or the day before. Weekends and Sunday slots before flights book up fastest, so for those, try 2 or 3 days ahead.",
+      'faq.q2': 'Is it really safe to have someone come to my Airbnb?',
+      'faq.a2': "I totally get it, fair question. If you want, I can send a photo of my ID before I come, or meet you in the lobby and we head up together. Hosts and doormen here are used to it. Having someone come over for beauty stuff is super common in Medellín.",
+      'faq.q3': 'What languages do you speak?',
+      'faq.a3': "Spanish is what I speak for real. English I'm still learning (slow but going!), so Google Translate and I have become best friends. Message me in either language and we'll figure it out, no stress.",
+      'faq.q4': 'Do you do nail art or just basic polish?',
+      'faq.a4': "Simple stuff like French tips, an accent nail, or basic line work, yes, all good. Anything really elaborate (3D, super detailed art), I'll be honest with you and point you to a friend who specializes in that.",
+      'faq.q5': 'How do I pay?',
+      'faq.a5': "Cash in pesos is the easiest. I also take Nequi, Daviplata, and international transfers through Wise. No credit-card machine yet, sorry!",
+      'faq.q6': 'Can I book for a group? (bachelorette, friends visiting)',
+      'faq.a6': "Yes please, I love these. I can do up to 3 or 4 people back-to-back at the same place. Tell me how many of you and when, and I'll put a plan together for the group.",
+      'faq.q7': 'What if my polish chips after?',
+      'faq.a7': "If a gel manicure chips within 5 days, send me a photo and I'll come fix it for free. Regular polish doesn't have the same guarantee since it's not made to last that way, but I'll always tell you straight up which one fits the week you've got planned.",
+
+      'cta.eyebrow': 'Ready?',
+      'cta.title': 'Your nails',
+      'cta.title-accent': 'are waiting',
+      'cta.sub': "Send me a WhatsApp and we'll find a time that works. I usually answer within 15 minutes.",
+      'cta.btn': 'Message me on WhatsApp',
+      'cta.hours': 'I usually answer within 15 minutes',
+      'cta.area': 'Poblado, Laureles & Envigado',
+
+      'footer.tagline': 'Mani & Pedi at Your Place in Medellín',
+      'footer.rights': 'Laura Nails · Medellín, Colombia',
+
+      'wa.default-text': 'Hi Laura! I saw your website.'
+    }
+  };
+
+  function escapeHTML(s) {
+    return s.replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function setLang(lang) {
+    if (!I18N[lang]) return;
+    var dict = I18N[lang];
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.dataset.i18n;
+      var txt = dict[key];
+      if (txt == null) return;
+      if (txt.indexOf('\n') !== -1) {
+        el.innerHTML = txt.split('\n').map(escapeHTML).join('<br>');
+      } else {
+        el.textContent = txt;
+      }
+    });
+
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
+      var key = el.dataset.i18nAria;
+      if (dict[key] != null) el.setAttribute('aria-label', dict[key]);
+    });
+
+    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      var key = el.dataset.i18nAlt;
+      if (dict[key] != null) el.setAttribute('alt', dict[key]);
+    });
+
+    if (dict['meta.title']) document.title = dict['meta.title'];
+    var metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && dict['meta.description']) metaDesc.setAttribute('content', dict['meta.description']);
+
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    });
+
+    // Refresh WhatsApp links so prefilled message text matches the active language
+    document.querySelectorAll('[data-wa]').forEach(function (el) {
+      var key = el.dataset.waTextKey || 'wa.default-text';
+      var msg = dict[key];
+      el.setAttribute('href', msg ? WA_URL + '?text=' + encodeURIComponent(msg) : WA_URL);
+    });
+
+    try { localStorage.setItem('lang', lang); } catch (e) { /* private mode, ignore */ }
+  }
+
+  // Wire language toggle
+  document.querySelectorAll('.lang-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () { setLang(btn.dataset.lang); });
+  });
+
+  // Initialize: read stored choice, fallback to Spanish default
+  var stored = null;
+  try { stored = localStorage.getItem('lang'); } catch (e) { /* ignore */ }
+  setLang(stored && I18N[stored] ? stored : 'es');
+
+  // FAQ accordion: click question to toggle answer; Enter/Space also work.
+  document.querySelectorAll('.d3-faq-item').forEach(function (item) {
+    var q = item.querySelector('.d3-faq-q');
+    if (!q) return;
+    q.setAttribute('role', 'button');
+    q.setAttribute('tabindex', '0');
+    q.setAttribute('aria-expanded', 'false');
+
+    function toggle() {
+      var open = item.classList.toggle('open');
+      q.setAttribute('aria-expanded', String(open));
+    }
+    q.addEventListener('click', toggle);
+    q.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+    });
+  });
+
+  // Scroll-triggered reveal animations via IntersectionObserver
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      io.observe(el);
+    });
+  } else {
+    // Fallback: just show everything
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+
+  // Mobile WhatsApp FAB: fade in once user scrolls past the hero
+  var fab = document.getElementById('wa-fab');
+  if (fab) {
+    var fabVisible = false;
+    var onScroll = function () {
+      var shouldShow = window.scrollY > 600;
+      if (shouldShow !== fabVisible) {
+        fabVisible = shouldShow;
+        fab.classList.toggle('visible', shouldShow);
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+})();
+</script>
+
+</body>
+</html>
